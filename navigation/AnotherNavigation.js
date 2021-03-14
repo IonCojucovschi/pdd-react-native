@@ -60,5 +60,5 @@ const AnotherNavigator=createDrawerNavigator({
 
 })
 
-export default NotificationScreen;
+export default AnotherNavigator;
 

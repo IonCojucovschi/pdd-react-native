@@ -14,7 +14,6 @@ import FeedScreen from "../screens/FeedScreen";
 /// import navigators
 import NotificationNavigator from './NotificationNavigator';
 import AnotherNavigation from "./AnotherNavigation";
-import AnotherScreen from "../screens/AnotherScreen.js";
 
 const _FeedNaviator = createStackNavigator({
   Feed:{
@@ -86,7 +85,7 @@ const AppNavigator = createBottomTabNavigator({
     }
   },
   Another:{
-    screen:AnotherScreen,
+    screen:AnotherNavigation,
     navigationOptions:{
       title:"Mai mult"
     }

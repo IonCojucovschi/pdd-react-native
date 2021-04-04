@@ -1,13 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import TestList from "../components/testscreen/testList";
 
 const FeedScreen = () =>{
 
-return  <View styles={styles.container}>
+return  (<View styles={styles.container}>
         <Text>
             News
         </Text>
-    </View>
+        <TestList />
+    </View>)
 }
 
 const styles = StyleSheet.create({

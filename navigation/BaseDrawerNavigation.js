@@ -10,6 +10,8 @@ import HomeScreen from '../screens/Home.js'
 import MessagesScreen from "../screens/MessagesScreen";
 import SearchScreen from "../screens/SearchScreen";
 import FeedScreen from "../screens/FeedScreen";
+import ExamTestsScreen from "../screens/ExamTestsScreen";
+import SelectedTestScreen  from "../screens/SelectedTestScreen";
 
 /// import navigators
 import NotificationNavigator from './NotificationNavigator';
@@ -42,6 +44,23 @@ const _SearchNaviator = createStackNavigator({
   }
 });
 
+
+const _ExamTestsNaviator = createStackNavigator({
+  Tests:{
+    screen:ExamTestsScreen,
+    navigationOptions:{
+      title:"Teste"
+    }
+  },
+  SelectedTest:{
+    screen:SelectedTestScreen,
+    navigationOptions:{
+      headerShown:false
+    }
+  }
+});
+
+
 const _MessagesNaviator = createStackNavigator({
   Feed:{
     screen:MessagesScreen,
@@ -66,10 +85,10 @@ const AppNavigator = createBottomTabNavigator({
       title:"Feed ceva"
     }
   },
-  Search:{
-    screen:_SearchNaviator,
+  Tests:{
+    screen:_ExamTestsNaviator,
     navigationOptions:{
-      title:"Cauta"
+      title:"Teste"
     }
   },
   Messages:{

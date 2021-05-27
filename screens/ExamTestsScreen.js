@@ -1,9 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import { View, Text, StyleSheet,Button, FlatList, TouchableHighlight } from "react-native";
 import testResources from "../components/testscreen/testList.json"
-
-
-
+import allTest from "../AllTest.json";
 
 
 
@@ -40,18 +38,18 @@ const TestList = ({navigation}) => {
 
     const goToSenectedTest=(test)=>{
       console.log("Test click: ", test);  
-      navigation.navigate('SelectedTest', { id: test});
+      navigation.navigate('SelectedTest', { Id: test });
     }
-////style={{alignContent:"center"}}
+    ////style={{alignContent:"center"}}
     return <View style={stylesList.container}>
     <FlatList
-        data={testResources}
+        data={allTest}
         style={{backgroundColor:"#dedede"}}
         numColumns={3}
-        renderItem={({ item }) => (<TouchableHighlight style={stylesList.itemList} onPress={()=>goToSenectedTest(item.id)}>
+        renderItem={({ item, index }) => (<TouchableHighlight style={stylesList.itemList} onPress={()=>goToSenectedTest(item.ChapterKey)}>
               <View>
                 <View >
-                  <Text style={stylesList.textStyle}>{item.name}</Text>
+                  <Text style={stylesList.textStyle}>{"Testul "+ (index+1)}</Text>
                 </View>
               </View>
           </TouchableHighlight>)}

@@ -39,7 +39,8 @@ class  HorizontalTestList extends Component  {
 
     goToSenectedTest=(test)=>{
       //navigation.navigate('Home', { id: test});
-      console.log("Selected test is ", test);
+      this.props.onTestSelecting(test);
+      ///console.log("Selected test is ", test);
     }
 
    render(){ 

@@ -9,14 +9,23 @@ class SelectedTestScreen extends Component {
 
     constructor(props){
       super(props);
-      let allTest = AllTests.filter(elm=>elm.ChapterKey=="chapter1"); 
-
+      let selectedTest=this.props.navigation.getParam("Id","chapter1");
+      let allTest = AllTests.filter(elm=>elm.ChapterKey==selectedTest); 
 
       ///let test = AllTests[0]; 
       ///allTest.Responses = allTest.Responses.map(itm=>{itm.backgroundColor="#ccc"; return itm;}); 
       this.state={  test:allTest[0], allTests:allTest  };
 
 
+    }
+
+    onTestSelecting=(test)=>{
+
+      console.log("Test selected: ",test);
+      let tempState=this.state;
+      let selectedTest = this.state.allTests.find(elm=>elm.Id==test);
+      tempState.test = selectedTest ? selectedTest:{ Responses:[]};
+      this.setState(tempState);
     }
 
     responseClick=(rs)=>{
@@ -42,7 +51,10 @@ class SelectedTestScreen extends Component {
         else
           return elm; 
       });
-      tempTest.test = nextTest ? nextTest :{ Responses:[]};
+
+      if(rs.IsRight)
+        tempTest.test = nextTest ? nextTest :{ Responses:[]};
+      
       console.log("Rs clicked1 :",tempTest);
       
       
@@ -50,17 +62,35 @@ class SelectedTestScreen extends Component {
       this.setState(tempTest);
       //setUpdatedValues(tempTest);
     }
+
+    renderComment=()=>{
+    
+      var comment = this.state.test.backgroundColor ? (<View style={{margin:10}}>
+        <Text>
+            {this.state.test.Comment}
+        </Text>
+      </View>) : null;
+  
+      return comment;
+    }
+
    render(){
     return (<View styles={{ flex:1, height:'800', flexDirection:'column', backgroundColor:"#008000"}}>
               <View style={{flex:1}}>
-                 <HorizontalTestList allTests={this.state.allTests} />
+                 <HorizontalTestList allTests={this.state.allTests} onTestSelecting={this.onTestSelecting} />
               </View>
-              <View style={{flex:3}}>
+              <View style={{flex:3, margin:5}}>
                 {this.state.test.ImageUri ?
                   <Image style={{height:200,width:null, flex:1, backgroundColor:'#ccc', alignContent:"center"}}
                       source={require("../img"+ this.state.test.ImageUri)}
                   />:null
                 }
+              </View>
+              <View style={{ margin:15 }}>
+                <Text
+                  style={{fontWeight:"bold", fontSize:15 }}
+                >{this.state.test.Query}
+                </Text>
               </View>
               <View style={{flex:6, alignContent:'space-between'}}>
                 {this.state.test.Responses.map(el=>
@@ -73,7 +103,7 @@ class SelectedTestScreen extends Component {
                      />
                    </View>)}
               </View>
-
+              {this.renderComment()}
           </View>)
    }      
 }

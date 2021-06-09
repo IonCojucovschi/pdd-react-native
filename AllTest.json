@@ -118,7 +118,7 @@
         "Id": 26,
         "ChapterKey": "chapter2",
         "Query": "qwerqwerqwe qwe rqw er qwerqwer",
-        "ImageUri": "/chapter2/ff0ca7db-088d-4487-8849-9d125f815ce6.jpg",
+        "ImageUri": null,
         "Thema": "werqwerqwe",
         "Comment": "Comantariu clar referitor la intrebare",
         "Responses": [
@@ -158,6 +158,196 @@
             },
             {
                 "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 28,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla2?????",
+        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie.",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 29,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla3?????",
+        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            },
+            {
+                "Id": 56,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 30,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla5?????",
+        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            },
+            {
+                "Id": 56,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 31,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla6?????",
+        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            },
+            {
+                "Id": 56,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 32,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla7?????",
+        "ImageUri": null,
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            },
+            {
+                "Id": 56,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 33,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla8?????",
+        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            },
+            {
+                "Id": 56,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            }
+        ]
+    },
+    {
+        "Id": 34,
+        "ChapterKey": "chapter3",
+        "Query": "Ce se intampla9?????",
+        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
+        "Thema": "TEMA2",
+        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
+        "Responses": [
+            {
+                "Id": 54,
+                "Response": "erqwrerqw",
+                "IsRight": true,
+                "QueryId": 27
+            },
+            {
+                "Id": 55,
+                "Response": "qwerqwerqw",
+                "IsRight": false,
+                "QueryId": 27
+            },
+            {
+                "Id": 56,
                 "Response": "qwerqwerqw",
                 "IsRight": false,
                 "QueryId": 27

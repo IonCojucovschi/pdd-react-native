@@ -33,6 +33,7 @@ const stylesList = StyleSheet.create({
 class  HorizontalTestList extends Component  {
     constructor(props){
         super(props);
+        this.state={currentTest:null};
         console.log("Tests: ",this.props);
     }
     ///console.log("All Tests: ",state);
@@ -40,14 +41,26 @@ class  HorizontalTestList extends Component  {
     goToSenectedTest=(test)=>{
       //navigation.navigate('Home', { id: test});
       this.props.onTestSelecting(test);
-      ///console.log("Selected test is ", test);
+      let curentTest=this.props.allTests.findIndex((el)=>el.Id==test);
+      console.log("Selected test is ", curentTest);
+
+      if(curentTest>0){
+          this.setState({currentTest:curentTest});
+          this.scrollToItem(curentTest);
+      }
     }
+
+    scrollToItem = (index) => {
+        
+        this.flatListRef.scrollToIndex({animated: true, index: "" + index});
+      }
 
    render(){ 
         return <View style={stylesList.container}>
                 <FlatList
                     horizontal={true}
                     keyExtractor={(item1)=>"elm0"+item1.Id}
+                    ref={(ref) => { this.flatListRef = ref; }}
                     data={ this.props.allTests }
                     style={{backgroundColor:"#eee"}}
                     renderItem={({ item, index }) => (<TouchableHighlight 

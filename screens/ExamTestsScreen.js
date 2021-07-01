@@ -1,81 +1,51 @@
 import React, {Component} from "react";
 import { View, Text, StyleSheet,Button, FlatList, TouchableHighlight } from "react-native";
-import testResources from "../components/testscreen/testList.json"
+import testResources from "../components/testscreen/testList.json";
 import allTest from "../AllTest.json";
 
+import HeaderComponent from "../components/HeaderComponent";
+import TestItem from "../components/TestComponent/TestItem";
 
 
-const stylesList = StyleSheet.create({
-    container: {
-      flex: 1,
-      paddingTop: 22,
-    },
-    item: {
-      padding: 10,
-      fontSize: 18,
-      height: 44,
-    },
-    textStyle:{
-      fontSize:20,
-      color:"#000000",
-      alignSelf:"center",
-      //backgroundColor:"#d1c541"
-    },
-    itemList:{
-      color:'#cdcdcd',
-      backgroundColor:'#06ba1e',
-      padding:5,
-      width:80,
-      height:50,
-      flex:1,
-      borderRadius:4,
-      alignItems:"space-between",
-      margin: 5
-    }
-})
+const style = StyleSheet.create({
+  examTests:{
+    width:"100%",
+    height:"100%",
+    backgroundColor:"#eeeeee",
 
-const TestList = ({navigation}) => {
+  },
+  listContainer:{
+    width:"100%",
+    marginTop:10,
+    marginLeft:25,
+    marginRight:25,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  }
+});
 
-    const goToSenectedTest=(test)=>{
-      console.log("Test click: ", test);  
-      navigation.navigate('SelectedTest', { Id: test });
-    }
-    ////style={{alignContent:"center"}}
-    return <View style={stylesList.container}>
-    <FlatList
-        data={allTest}
-        style={{backgroundColor:"#dedede"}}
-        numColumns={3}
-        renderItem={({ item, index }) => (<TouchableHighlight style={stylesList.itemList} onPress={()=>goToSenectedTest(item.ChapterKey)}>
-              <View>
-                <View >
-                  <Text style={stylesList.textStyle}>{"Testul "+ (index+1)}</Text>
-                </View>
-              </View>
-          </TouchableHighlight>)}
-    />
-</View>
+const testMoq=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36];
+
+class ExamTestsScreen extends Component{
+  constructor(props){
+    super(props);
+  }
+
+  render(){
+    return <View style={style.examTests}>
+              <HeaderComponent/>
+              <View style={{marginTop:20,width:"100%"}}/>
+              <FlatList
+                  columnWrapperStyle={{ marginLeft:25, marginRight:25, justifyContent: 'space-between'}}
+                  data={testMoq}
+                  numColumns={4}
+                  renderItem={({ item, index }) => (<TestItem key={"testul"+index} navigation={this.props.navigation} item={item}/>)}
+              />
+              
+            </View>
+  }
+
 }
-
-
-
-
-const ExamTestsScreen = ({navigation}) =>{
-    ///<Button title="Menu Lateral"  onPress={toggleMenu} />
-            
-    return  (<View styles={styles.container}>
-                <TestList navigation={navigation}/>
-            </View>)
-}
-    
-
-const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        alignItems:"center",
-        justifyContent:"center"
-    }
-})
 
 export default ExamTestsScreen
 

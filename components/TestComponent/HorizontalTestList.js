@@ -14,7 +14,9 @@ const stylesList = StyleSheet.create({
     textStyle:{
       fontSize:15,
       color:"#000000",
+      textAlign:"center",
       alignSelf:"center",
+      fontWeight:"bold",
       //backgroundColor:"#d1c541"
     },
     itemList:{
@@ -25,7 +27,7 @@ const stylesList = StyleSheet.create({
       height:50,
       flex:1,
       borderRadius:4,
-      alignItems:"space-between",
+      //alignItems:"space-between",
       margin: 5
     }
 })
@@ -69,8 +71,9 @@ class  HorizontalTestList extends Component  {
                         color:'#cdcdcd',
                         backgroundColor: (item.backgroundColor ? item.backgroundColor :'#ddd'),///'#06ba1e',
                         padding:5,
-                        width:80,
-                        height:50,
+                        width:55,
+                        height:48,
+                        alignItems:"center",
                         flex:1,
                         borderRadius:4,
                         alignItems:"space-between",
@@ -79,9 +82,7 @@ class  HorizontalTestList extends Component  {
                     } 
                     onPress={()=>this.goToSenectedTest(item.Id)}>
                         <View>
-                            <View >
-                            <Text style={stylesList.textStyle}>{"Test " + index }</Text>
-                            </View>
+                          <Text style={stylesList.textStyle}>{"Test \n" + index }</Text>
                         </View>
                         </TouchableHighlight>)}
                     />

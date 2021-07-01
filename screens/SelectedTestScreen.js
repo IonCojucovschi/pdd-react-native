@@ -1,9 +1,32 @@
 import React, { Component,useState,useEffect } from "react";
-import { AppRegistry, View, Text, StyleSheet, Image, Button, FlatList, TouchableHighlight } from "react-native";
+import { AppRegistry, View, Text, StyleSheet,ScrollView , Image, Button, FlatList, TouchableHighlight } from "react-native";
 import testResources from "../components/testscreen/testList.json";
 import AllTests from "../AllTest.json";
 import HorizontalTestList from '../components/TestComponent/HorizontalTestList';
+import HeaderComponent from '../components/HeaderComponent';
+import AnswerItem from '../components/TestComponent/AnswerItem';
 
+const style = StyleSheet.create({
+  testContainer:{
+    height:"100%",
+    width:"100%",
+    backgroundColor:"#eeeeee",
+  },
+  comentStyle:{
+    margin:23,
+  },
+  commentTextStyle:{
+    padding:10,
+    borderColor:"#06c20f",
+    borderRadius:20,
+    borderWidth:1,
+    fontSize:15,
+    ///height:"100%",
+    width:"100%",
+    fontWeight:"bold",
+  }
+
+})
 
 class SelectedTestScreen extends Component {
 
@@ -29,6 +52,7 @@ class SelectedTestScreen extends Component {
     }
 
     responseClick=(rs)=>{
+      console.log("Yoooho!!!!!");
       let tempTest=this.state;
 
       tempTest.test.Responses = this.state.test.Responses.map((el)=>{
@@ -56,17 +80,20 @@ class SelectedTestScreen extends Component {
         tempTest.test = nextTest ? nextTest :{ Responses:[]};
       
       console.log("Rs clicked1 :",tempTest);
-      
-      
+      ///set next test background color 
+      if(!tempTest.test.backgroundColor)
+        tempTest.test.backgroundColor="#75ebd7";
       
       this.setState(tempTest);
-      //setUpdatedValues(tempTest);
     }
 
     renderComment=()=>{
     
-      var comment = this.state.test.backgroundColor ? (<View style={{margin:10}}>
-        <Text>
+      var comment = this.state.test.backgroundColor ? (<View style={style.comentStyle}>
+        <Text style={{ fontSize:15, fontWeight:"bold", marginBottom:10,}}>
+          Descriere:
+        </Text>
+        <Text style={style.commentTextStyle}>
             {this.state.test.Comment}
         </Text>
       </View>) : null;
@@ -75,52 +102,46 @@ class SelectedTestScreen extends Component {
     }
 
    render(){
-    return (<View styles={{ flex:1, height:'800', flexDirection:'column', backgroundColor:"#008000"}}>
-              <View style={{flex:1}}>
+    return (<ScrollView  style={style.testContainer}>
+              <HeaderComponent/>
+              <View style={{ marginRight:20, marginLeft:20, marginTop:15}}>
                  <HorizontalTestList allTests={this.state.allTests} onTestSelecting={this.onTestSelecting} />
               </View>
-              <View style={{flex:3, margin:5}}>
-                {this.state.test.ImageUri ?
-                  <Image style={{height:200,width:null, flex:1, backgroundColor:'#ccc', alignContent:"center"}}
-                      source={require("../img"+ this.state.test.ImageUri)}
-                  />:null
-                }
-              </View>
-              <View style={{ margin:15 }}>
+              <View style={{ marginRight:5, marginLeft:23 }}>
                 <Text
-                  style={{fontWeight:"bold", fontSize:15 }}
+                  style={{fontWeight:"bold", fontSize:21 }}
                 >{this.state.test.Query}
                 </Text>
               </View>
-              <View style={{flex:6, alignContent:'space-between'}}>
-                {this.state.test.Responses.map(el=>
-                   <View key={"str"+el.Id} style={{margin:10}}>
-                     <Button
-                      onPress={()=>this.responseClick(el)}
-                      color={el.backgroundColor ? el.backgroundColor :"#ccc" }
-                      title={el.Response}
-                      margin="5"
-                     />
-                   </View>)}
+              <View style={{ marginRight:23, marginLeft:23, marginTop:10}}>
+                {this.state.test.ImageUri ?
+                  <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center"}}
+                      
+                  />:null
+                }
+              </View>
+            
+              <View style={{
+                 width:"100%",
+                 paddingLeft:20,
+                 paddingRight:20,
+                 alignContent:'space-between'}}>
+                {this.state.test.Responses.map((el,key)=>
+                   <AnswerItem 
+                    key={"str"+el.Id}
+                    element={el}
+                    colorValue={el.backgroundColor ? el.backgroundColor :"#fff" } 
+                    clickToRespond={this.responseClick}
+                    answerValue={el.Response}
+                    answerNumber = {key+1} />
+                  )}
               </View>
               {this.renderComment()}
-          </View>)
+          </ScrollView>)
    }      
 }
-    
-
-const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        flexDirection:'column',
-        padding:5,
-        backgroundColor:'#000',
-        flexWrap:'wrap',
-        //alignItems:"center",
-        //justifyContent:"center"
-    }
-})
-
+///onPress={()=>{}}
+///source={require("../img"+ this.state.test.ImageUri)}
 export default SelectedTestScreen
 
 

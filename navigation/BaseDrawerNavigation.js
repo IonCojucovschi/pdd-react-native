@@ -1,4 +1,4 @@
-import { createAppContainer } from "react-navigation";
+import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -16,33 +16,26 @@ import SelectedTestScreen  from "../screens/SelectedTestScreen";
 /// import navigators
 import NotificationNavigator from './NotificationNavigator';
 import AnotherNavigation from "./AnotherNavigation";
+import { floor } from "react-native-reanimated";
 
-const _FeedNaviator = createStackNavigator({
-  Feed:{
-    screen:FeedScreen,
-    navigationOptions:{
-      title:"News"
-    }
-  }
-});
+// const _FeedNaviator = createStackNavigator({
+//   Feed:{
+//     screen:FeedScreen,
+//     navigationOptions:{
+//       title:"News"
+//     }
+//   }
+// });
 
-const _HomeNaviator = createStackNavigator({
-  Feed:{
-    screen:HomeScreen,
-    navigationOptions:{
-      title:"Acasa"
-    }
-  }
-});
 
-const _SearchNaviator = createStackNavigator({
-  Feed:{
-    screen:SearchScreen,
-    navigationOptions:{
-      title:"Cauta ..."
-    }
-  }
-});
+// const _SearchNaviator = createStackNavigator({
+//   Feed:{
+//     screen:SearchScreen,
+//     navigationOptions:{
+//       title:"Cauta ..."
+//     }
+//   }
+// });
 
 
 const _ExamTestsNaviator = createStackNavigator({
@@ -72,48 +65,81 @@ const _MessagesNaviator = createStackNavigator({
 
 
 
-const AppNavigator = createBottomTabNavigator({
+// const AppNavigator = createBottomTabNavigator({
+//   Home:{
+//     screen:_HomeNaviator,
+//     navigationOptions:{
+//       title:"Acasa"
+//     }
+//   },
+//   Feed:{
+//     screen:_FeedNaviator,
+//     navigationOptions:{
+//       title:"Feed ceva"
+//     }
+//   },
+//   Tests:{
+//     screen:_ExamTestsNaviator,
+//     navigationOptions:{
+//       title:"Teste"
+//     }
+//   },
+//   Messages:{
+//     screen: _MessagesNaviator,
+//     navigationOptions:{
+//       title:"Mesagerie"
+//     }
+//   },
+//   Notification:{
+//     screen:NotificationNavigator,
+//     navigationOptions:{
+//       title:"Notificari"
+//     }
+//   },
+//   Another:{
+//     screen:AnotherNavigation,
+//     navigationOptions:{
+//       title:"Mai mult"
+//     }
+//   }
+
+// },
+// {
+//   initialRouteName:"Home"
+// }
+// )
+
+
+
+
+const _HomeNaviator = createStackNavigator({
   Home:{
-    screen:_HomeNaviator,
+    screen:HomeScreen,
     navigationOptions:{
-      title:"Acasa"
-    }
-  },
-  Feed:{
-    screen:_FeedNaviator,
-    navigationOptions:{
-      title:"Feed ceva"
+      headerShown:false
     }
   },
   Tests:{
-    screen:_ExamTestsNaviator,
+    screen:ExamTestsScreen,
     navigationOptions:{
-      title:"Teste"
+      headerShown:false,
+      //title:"Teste"
     }
   },
-  Messages:{
-    screen: _MessagesNaviator,
+  SelectedTest:{
+    screen:SelectedTestScreen,
     navigationOptions:{
-      title:"Mesagerie"
-    }
-  },
-  Notification:{
-    screen:NotificationNavigator,
-    navigationOptions:{
-      title:"Notificari"
-    }
-  },
-  Another:{
-    screen:AnotherNavigation,
-    navigationOptions:{
-      title:"Mai mult"
+      headerShown:false
     }
   }
+});
 
-},
-{
-  initialRouteName:"Messages"
-}
-)
 
-export default createAppContainer(AppNavigator)
+// const MainNavigator = createSwitchNavigator({
+//     Home=_HomeNaviator,
+//     Tests=_TestsNaviator,
+
+// })
+
+
+export default createAppContainer(_HomeNaviator)

@@ -24,7 +24,9 @@ const style = StyleSheet.create({
   }
 });
 
-const testMoq=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36];
+const testMoq=[{Id:1, Tema:"[1.1] Dispoziții generale. Noțiuni şi termeni de bază"},
+{Id:2, Tema:"[1.2] Conducătorii de vehicule şi obligațiile acestora"},
+];
 
 class ExamTestsScreen extends Component{
   constructor(props){

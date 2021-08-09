@@ -3,36 +3,10 @@ import { View, Text, StyleSheet, Image, Button, FlatList, TouchableHighlight } f
 
 const style = StyleSheet.create({
    
-
-  element:{
-    backgroundColor:"#ffffff",
-    borderRadius:30,
-    height:70,
-    marginTop:28,
-    flexDirection:"row",
-    alignItems:"center",
-    paddingLeft:15,
-
-  },
-  container:{
-    alignItems:"center",
-    flexDirection:"row",
-  },
-  elementsCounter:{
-    fontWeight:"bold",
-    fontSize:24,
-    color:"#AEEB7E",
-  },
-  ItemDescription:{
-    marginLeft:20,
-    fontSize:24,
-    fontWeight:"bold",
-  }
-
     
 })
 
-class  HomeItemComponent extends Component  {
+class  RouteItem extends Component  {
     constructor(props){
         super(props);
     }
@@ -57,7 +31,7 @@ class  HomeItemComponent extends Component  {
     }
 }
 
-export default HomeItemComponent;
+export default RouteItem;
 
 
 

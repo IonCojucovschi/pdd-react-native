@@ -8,8 +8,8 @@ import { createBottomTabNavigator } from "react-navigation-tabs";
 import CategoriesScreen from '../screens/Categories.js'
 import HomeScreen from '../screens/Home.js'
 import MessagesScreen from "../screens/MessagesScreen";
-import SearchScreen from "../screens/SearchScreen";
-import FeedScreen from "../screens/FeedScreen";
+import Utils from "../screens/Utils";
+import ExamCenters from "../screens/ExamCenters";
 import ExamTestsScreen from "../screens/ExamTestsScreen";
 import SelectedTestScreen  from "../screens/SelectedTestScreen";
 
@@ -130,6 +130,18 @@ const _HomeNaviator = createStackNavigator({
     screen:SelectedTestScreen,
     navigationOptions:{
       headerShown:false
+    }
+  },
+  Utils:{
+    screen:Utils,
+    navigationOptions:{
+      headerShown:false
+    }
+  },
+  ExamCenters:{
+    screen:ExamCenters,
+    navigationOptions:{
+      headerShown:false,
     }
   }
 });

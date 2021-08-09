@@ -38,7 +38,7 @@ class TestItem extends Component{
 
     goToSenectedTest = (item)=>{
         console.log("Selected test is: ",item);
-        this.props.navigation.navigate("SelectedTest",{navigation:this.props.navigation})
+        this.props.navigation.navigate("SelectedTest",{navigation:this.props.navigation, chapter:item})
     }
 
     render(){
@@ -46,7 +46,7 @@ class TestItem extends Component{
             this.props.item == 36 ? <View style={style.testItem}/> :
             <TouchableHighlight style={style.testItemContainer} onPress={()=>this.goToSenectedTest(this.props.item)}>
                 <View style={style.testItem}>
-                    <Text style={style.itemText}>{this.props.item}</Text>
+                    <Text style={style.itemText}>{this.props.item.Id}</Text>
                 </View>
             </TouchableHighlight>
         )

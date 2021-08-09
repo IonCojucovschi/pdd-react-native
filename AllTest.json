@@ -1,357 +1,1316 @@
-[
-    {
-        "Id": 21,
-        "ChapterKey": "chapter1",
-        "Query": "Ce se intampla sdfgsd fgsd fgs dfgsdfg sdfgsdfg adfg sdfg dfsgsdfgsdfg?",
-        "ImageUri": "/chapter1/c3e5d60b-ebec-4785-9e52-97fe3eea9d4f.png",
-        "Thema": "TEMA1",
-        "Comment": "DasdASD ASD as dA SD a sdAS D fdsaf asd fas dg ad wtgwh rth rht rthwr thwrt hety jetyjetyhdfgh dfghd fghdfghsfghwrhe tyherhte thetyh ehtet her ther thetyer tyert yer tyertyertyertyertye etr yer tye rty ergsfdg sgfhdfghdfgh df ghdf ghd fgh.",
-        "Responses": [
-            {
-                "Id": 35,
-                "Response": "ddas dAS Das dAS fasdf asd fas dfa sdgagtwgwrgw tg245ywfggwer gwe rgwe r 5werg wregtwrgw wergwerg reg",
-                "IsRight": false,
-                "QueryId": 21
-            },
-            {
-                "Id": 36,
-                "Response": " В местах с видимостью хотя бы в одном направлении 150 м без помощи другого лица, находящегося вне транспортного средства.",
-                "IsRight": true,
-                "QueryId": 21
-            },
-            {
-                "Id": 37,
-                "Response": "ASDasd ASD asd ASD",
-                "IsRight": false,
-                "QueryId": 21
-            }
-        ]
-    },
-    {
-        "Id": 22,
-        "ChapterKey": "chapter1",
-        "Query": "Intrebare Fara imagine ",
-        "ImageUri": null,
-        "Thema": "TEMA1",
-        "Comment": "wertwe rwe rtw erwe",
-        "Responses": [
-            {
-                "Id": 40,
-                "Response": "rqwerqwe qwer qwer",
-                "IsRight": false,
-                "QueryId": 22
-            },
-            {
-                "Id": 41,
-                "Response": "qwerqwerqwe rqw er qwe rqw",
-                "IsRight": true,
-                "QueryId": 22
-            }
-        ]
-    },
-    {
-        "Id": 23,
-        "ChapterKey": "chapter1",
-        "Query": "Ce se intampla fdgsdfg sdfg sdf gsd fgwtrhwrhteyh sdfgdsfvsd?",
-        "ImageUri": "/chapter1/0aaff7a5-bb58-44a0-a0f2-e3157176e663.png",
-        "Thema": "TEMA2",
-        "Comment": "Comantariu clar referitor la intrebare",
-        "Responses": [
-            {
-                "Id": 42,
-                "Response": "asdf",
-                "IsRight": false,
-                "QueryId": 23
-            },
-            {
-                "Id": 43,
-                "Response": "wfawdfqwefq",
-                "IsRight": true,
-                "QueryId": 23
-            },
-            {
-                "Id": 44,
-                "Response": "asdfasdf",
-                "IsRight": false,
-                "QueryId": 23
-            }
-        ]
-    },
-    {
-        "Id": 24,
-        "ChapterKey": "chapter2",
-        "Query": "qeqwerqwer qwer qwe rqwe rqwe r?",
-        "ImageUri": "/chapter2/eb3c1e55-972c-4e5a-9a82-85ec190add75.jpg",
-        "Thema": "TEMA1",
-        "Comment": "qwerqwer qwe rqwe rqw er",
-        "Responses": [
-            {
-                "Id": 45,
-                "Response": "qwerqwerqwe qwe rqw er qwe",
-                "IsRight": false,
-                "QueryId": 24
-            },
-            {
-                "Id": 46,
-                "Response": "qwe rqwe rqw er qwer",
-                "IsRight": false,
-                "QueryId": 24
-            },
-            {
-                "Id": 47,
-                "Response": "q wer qwe rqw er qwer",
-                "IsRight": true,
-                "QueryId": 24
-            }
-        ]
-    },
-    {
-        "Id": 25,
-        "ChapterKey": "chapter2",
-        "Query": "qwer qwe rqw e rqwe r qwe rqwe?",
-        "ImageUri": null,
-        "Thema": "TEMA2",
-        "Comment": "Comantariu clar referitor la intrebare",
-        "Responses": []
-    },
-    {
-        "Id": 26,
-        "ChapterKey": "chapter2",
-        "Query": "qwerqwerqwe qwe rqw er qwerqwer",
-        "ImageUri": null,
-        "Thema": "werqwerqwe",
-        "Comment": "Comantariu clar referitor la intrebare",
-        "Responses": [
-            {
-                "Id": 51,
-                "Response": "qwerqwerqwerqw",
-                "IsRight": false,
-                "QueryId": 26
-            },
-            {
-                "Id": 52,
-                "Response": "werqwerqw",
-                "IsRight": true,
-                "QueryId": 26
-            },
-            {
-                "Id": 53,
-                "Response": "qwerqwerqwerqwer",
-                "IsRight": false,
-                "QueryId": 26
-            }
-        ]
-    },
-    {
-        "Id": 27,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA1",
-        "Comment": "Prima masina va trece cea rosie.",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 28,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampl sdfg sdfg sdf gsd fg sdf gs sdfg a2?????",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie.",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 29,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla3?????",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            },
-            {
-                "Id": 56,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 30,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla5?????",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            },
-            {
-                "Id": 56,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 31,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla6?????",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            },
-            {
-                "Id": 56,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 32,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla7?????",
-        "ImageUri": null,
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            },
-            {
-                "Id": 56,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 33,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla8?????",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            },
-            {
-                "Id": 56,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    },
-    {
-        "Id": 34,
-        "ChapterKey": "chapter3",
-        "Query": "Ce se intampla9?????",
-        "ImageUri": "/chapter3/dceba5c6-dd30-4eab-92e3-98c4d2de4b71.jpg",
-        "Thema": "TEMA2",
-        "Comment": "Prima masina va trece cea rosie. Ha ha ha ....",
-        "Responses": [
-            {
-                "Id": 54,
-                "Response": "erqwrerqw",
-                "IsRight": true,
-                "QueryId": 27
-            },
-            {
-                "Id": 55,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            },
-            {
-                "Id": 56,
-                "Response": "qwerqwerqw",
-                "IsRight": false,
-                "QueryId": 27
-            }
-        ]
-    }
+﻿[
+  {
+    "Id": 32,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce acțiuni este obligat să întreprindă conducătorul de vehicul implicat într-un accident din traficul rutier?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul implicat într-un accident în traficul rutier este obligat să oprească imediat vehiculul P. 12 1) a) şi să pună în funcţiune avertizorul de avarie în conformitate cu P. 37 1) a), iar în cazul în care vehiculul nu este echipat cu avertizor de avarie sau acesta este defectat, conducătorul trebuie să semnalizeze prin amplasarea triunghiului de presemnalizare sau a lanternei portative cu lumina roşie intermitentă, P. 37 2).",
+    "Responses": [
+      {
+        "Id": 65,
+        "Response": " Să oprească imediat vehiculul, să pună în funcţiune avertizorul de avarie, iar în cazul în care acesta lipseşte sau este defectat să semnalizeze prin amplasarea triunghiului de presemnalizare (lanternei portative cu lumină roşie intermitentă).",
+        "IsRight": true,
+        "QueryId": 32
+      },
+      {
+        "Id": 66,
+        "Response": " Să asigure lizibilitatea numărului de înmatriculare.",
+        "IsRight": false,
+        "QueryId": 32
+      },
+      {
+        "Id": 67,
+        "Response": " Pe timp de noapte să conecteze lumina în salonul (cabina) vehiculului.",
+        "IsRight": false,
+        "QueryId": 32
+      },
+      {
+        "Id": 68,
+        "Response": " Să rămînă în vehicul ţinînd braţele pe volan pînă la sosirea lucrătorilor de poliţie.",
+        "IsRight": false,
+        "QueryId": 32
+      },
+      {
+        "Id": 69,
+        "Response": " Să întreprindă toate acţiunile enumerate.",
+        "IsRight": false,
+        "QueryId": 32
+      }
+    ]
+  },
+  {
+    "Id": 33,
+    "ChapterKey": "capitolul1",
+    "Query": "La solicitarea lucrătorilor de poliţie sînteţi Dvs. obligat să asiguraţi transportarea la instituţiile medicale a persoanelor care necesita asistenţă medicală urgentă?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat la solicitarea lucrătorilor de poliţie, să asigure transportarea persoanelor care necesită asistenţă medicală urgentă la instituţiile medicale, indiferent de direcţia de deplasare. P. 11 k), alineatul 3.",
+    "Responses": [
+      {
+        "Id": 70,
+        "Response": " Da, indiferent de direcţia de deplasare.",
+        "IsRight": true,
+        "QueryId": 33
+      },
+      {
+        "Id": 71,
+        "Response": " Sînteţi obligat numai în cazul în care unitatea medicală se găseşte în direcţia de deplasare a vehiculului.",
+        "IsRight": false,
+        "QueryId": 33
+      },
+      {
+        "Id": 72,
+        "Response": " Nu sînteţi obligat.",
+        "IsRight": false,
+        "QueryId": 33
+      }
+    ]
+  },
+  {
+    "Id": 34,
+    "ChapterKey": "capitolul1",
+    "Query": "Când vă aflați la trecerile pentru pietoni cu circulaţia nedirijată sunteţi obligat:",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat la trecerile pentru pietoni cu circulaţia nedirijată să cedeze trecerea pietonilor aflați în traversarea drumului pe partea carosabilului în direcția de mers a vehiculului. P. 11 f), alineatul 1.",
+    "Responses": [
+      {
+        "Id": 73,
+        "Response": "Să cedaţi trecerea pietonilor aflați în traversarea drumului pe partea carosabilului în direcția de mers a vehiculului.",
+        "IsRight": true,
+        "QueryId": 34
+      },
+      {
+        "Id": 74,
+        "Response": "Să reduceţi viteza şi să continuaţi deplasarea.",
+        "IsRight": false,
+        "QueryId": 34
+      },
+      {
+        "Id": 75,
+        "Response": "Ziua să claxonaţi, iar pe timp de noapte să comutaţi lumina în faruri.",
+        "IsRight": false,
+        "QueryId": 34
+      }
+    ]
+  },
+  {
+    "Id": 35,
+    "ChapterKey": "capitolul1",
+    "Query": "În timpul deplasării, conducătorul de vehicul este obligat:",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să conducă în aşa fel încât să nu stropească pietonii, atunci când pe drum este apă sau noroi. ",
+    "Responses": [
+      {
+        "Id": 80,
+        "Response": "Să poarte centura de siguranţă când execută manevra de mers cu spatele.",
+        "IsRight": false,
+        "QueryId": 35
+      },
+      {
+        "Id": 81,
+        "Response": "Să conducă în aşa fel încât să nu stropească pietonii, atunci când pe drum este apă sau noroi.",
+        "IsRight": true,
+        "QueryId": 35
+      },
+      {
+        "Id": 82,
+        "Response": "Să poarte vesta de protecţie-avertizare fluorescent-reflectorizantă, în cazul în care acesta se deplasează pe drumurile din afara localităţilor.",
+        "IsRight": false,
+        "QueryId": 35
+      },
+      {
+        "Id": 83,
+        "Response": "Să efectueze toate acţiunile enumerate.",
+        "IsRight": false,
+        "QueryId": 35
+      }
+    ]
+  },
+  {
+    "Id": 36,
+    "ChapterKey": "capitolul1",
+    "Query": "În cazul accidentului din traficul rutier, conducătorul de vehicul este obligat să asigure transportarea la unitatea medicală a persoanelor traumatizate?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul care a ajuns la locul unde s-a produs un accident în traficul rutier, în lipsa serviciilor de intervenţie, este obligat să oprească şi, în caz de necesitate să acorde primul ajutor, să cheme ambulanţa, iar dacă aceasta nu este posibil sau în cazurile de urgenţă - să transporte cu propriul vehicul persoana traumatizată la cea mai apropiată unitate medicală, să declare la unitatea medicală identitatea sa, prezentând permisul de conducere sau alt act, precum şi certificatul de înmatriculare a vehiculului. ",
+    "Responses": [
+      {
+        "Id": 84,
+        "Response": "Da, dacă unitatea medicală este dislocată în direcţia de deplasare.",
+        "IsRight": false,
+        "QueryId": 36
+      },
+      {
+        "Id": 85,
+        "Response": "Da, numai în cazul în care el este vinovat de producerea accidentului.",
+        "IsRight": false,
+        "QueryId": 36
+      },
+      {
+        "Id": 86,
+        "Response": "Da, dacă nu este posibilă chemarea ambulanţei sau în cazurile de urgenţă.",
+        "IsRight": true,
+        "QueryId": 36
+      },
+      {
+        "Id": 87,
+        "Response": "Da, dacă conducătorul are timp liber.",
+        "IsRight": false,
+        "QueryId": 36
+      },
+      {
+        "Id": 88,
+        "Response": "Da, dacă în vehicul este loc liber.",
+        "IsRight": false,
+        "QueryId": 36
+      }
+    ]
+  },
+  {
+    "Id": 37,
+    "ChapterKey": "capitolul1",
+    "Query": "În ce caz conducătorul de vehicul este obligat să oprească imediat în cazul în care pietonul orb semnalizează prin ridicarea bastonului alb?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să oprească imediat vehiculul la semnalul orbului care traversează strada în orice loc (semnalul dat prin ridicarea bastonului alb).",
+    "Responses": [
+      {
+        "Id": 101,
+        "Response": "La traversarea străzii în orice loc.",
+        "IsRight": true,
+        "QueryId": 37
+      },
+      {
+        "Id": 102,
+        "Response": "Numai la traversarea străzii pe trecerea nedirijată pentru pietoni.",
+        "IsRight": false,
+        "QueryId": 37
+      },
+      {
+        "Id": 103,
+        "Response": "Numai la traversarea străzii pentru a se urca în vehiculul de rută.",
+        "IsRight": false,
+        "QueryId": 37
+      }
+    ]
+  },
+  {
+    "Id": 38,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce acțiuni va întreprinde conducătorul autoturismului în situaţia din imagine?",
+    "ImageUri": "/capitolul1/b6d9915b-adb9-4218-a912-436e5a9d26cb.png",
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să oprească imediat vehiculul la semnalul orbului care traversează strada (semnul dat prin ridicarea bastonului alb). P. 11 i), alineatul 5.",
+    "Responses": [
+      {
+        "Id": 98,
+        "Response": "Va claxona și va continua deplasarea fără a reduce viteza.",
+        "IsRight": false,
+        "QueryId": 38
+      },
+      {
+        "Id": 99,
+        "Response": "Va reduce viteza și va continua deplasarea cu prudență sporită.",
+        "IsRight": false,
+        "QueryId": 38
+      },
+      {
+        "Id": 100,
+        "Response": "Va opri opri imediat la semnalul orbului care traversează strada.",
+        "IsRight": true,
+        "QueryId": 38
+      }
+    ]
+  },
+  {
+    "Id": 39,
+    "ChapterKey": "capitolul1",
+    "Query": "Prin ce mod sunteți obligat să semnalizați vehiculul implicat în accidentul din traficul rutier?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "În cazul accidentului în traficul rutier conducătorul trebuie să pună în funcţiune avertizorul de avarie, P. 37 1) a), iar în cazul în care vehiculul nu este echipat cu avertizor de avarie sau acesta este defectat, conducătorul trebuie să semnalizeze prin amplasarea triunghiului de presemnalizare sau a lanternei portative cu lumină roşie intermitentă în spatele vehiculului ori, după caz, în faţa acestuia pe aceeaşi bandă, la o distanţă de cel puţin 30 m, astfel încât să poată fi văzut de la o distanţă suficientă de conducătorii vehiculelor care se apropie, P. 37 2).",
+    "Responses": [
+      {
+        "Id": 104,
+        "Response": "Numai prin punerea în funcţiune a avertizorului de avarie.",
+        "IsRight": false,
+        "QueryId": 39
+      },
+      {
+        "Id": 105,
+        "Response": "Numai prin amplasarea triunghiului de presemnalizare.",
+        "IsRight": false,
+        "QueryId": 39
+      },
+      {
+        "Id": 106,
+        "Response": "Numai prin amplasarea lanternei portative cu lumina roşie intermitentă.",
+        "IsRight": false,
+        "QueryId": 39
+      },
+      {
+        "Id": 107,
+        "Response": "Prin modalităţile indicate în punctele 1 şi 2.",
+        "IsRight": false,
+        "QueryId": 39
+      },
+      {
+        "Id": 108,
+        "Response": "Prin punerea în funcţiune a avertizorului de avarie, iar în cazul în care acesta lipseşte ori este defectat, prin amplasarea triunghiului de presemnalizare sau lanternei portative cu lumina roşie intermitentă în spatele vehiculului, ori, după caz, în faţa acestuia pe aceeaşi bandă la o distanţă de cel puţin 30 m.",
+        "IsRight": true,
+        "QueryId": 39
+      }
+    ]
+  },
+  {
+    "Id": 40,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce acțiune este obligat să efectueze conducătorul vehiculului după oprirea la semnalul agentului de circulaţie sau al altui reprezentant al organelor de control?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "După oprirea vehiculului la semnalul agentului de circulaţie sau al altui reprezentant al organelor de control, conducătorul este obligat să rămînă în vehicul ţinînd braţele pe volan pînă la apropierea persoanei care a impus oprirea. În cazul în care oprirea se efectuează pe timp de noapte, conducătorul este obligat să conecteze lumina în salonul (cabina) vehiculului. P. 11 i), alineatul 6.",
+    "Responses": [
+      {
+        "Id": 109,
+        "Response": "Să rămână în vehicul, pregătind actele pentru control.",
+        "IsRight": false,
+        "QueryId": 40
+      },
+      {
+        "Id": 110,
+        "Response": "Să coboare din vehicul şi să se îndrepte spre lucrătorul de poliţie pentru a-i prezenta actele.",
+        "IsRight": false,
+        "QueryId": 40
+      },
+      {
+        "Id": 111,
+        "Response": "Să rămînă în vehicul ţinînd braţele pe volan pînă la apropierea persoanei care a impus oprirea. Pe timp de noapte să conecteze lumina în salonul (cabina) vehiculului.",
+        "IsRight": true,
+        "QueryId": 40
+      }
+    ]
+  },
+  {
+    "Id": 41,
+    "ChapterKey": "capitolul1",
+    "Query": "Conform Regulamentului, conducătorul de vehicul este obligat:",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să se supună, la solicitarea polițistului, procedurii de testare a aerului expirat sau, după caz, examenului medical de recoltare a probelor biologice în vederea constatării alcoolemiei, consumului de droguri ori de alte substanţe psihotrope sau de medicamente cu efecte similare. P. 11 j).",
+    "Responses": [
+      {
+        "Id": 112,
+        "Response": "La solicitarea lucrătorilor de poliţie să asigure transportarea lor la locul de serviciu.",
+        "IsRight": false,
+        "QueryId": 41
+      },
+      {
+        "Id": 113,
+        "Response": "Să poarte vesta de protecţie-avertizare fluorescent-reflectorizantă în timpul deplasării pe drumurile din localităţi.",
+        "IsRight": false,
+        "QueryId": 41
+      },
+      {
+        "Id": 114,
+        "Response": "Să se supună la solicitarea polițistului, procedurii de testare a aerului expirat sau examenului medical în vederea constatării alcoolemiei.",
+        "IsRight": true,
+        "QueryId": 41
+      }
+    ]
+  },
+  {
+    "Id": 42,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce i se interzice conducătorului de vehicul?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorului de vehicul îi este interzis să deschidă portierele vehiculului în timpul mersului sau să pornească de pe loc cu portierele deschise. P. 14 c).",
+    "Responses": [
+      {
+        "Id": 115,
+        "Response": "Să se deplaseze cu spatele pe drumurile cu sens unic.",
+        "IsRight": false,
+        "QueryId": 42
+      },
+      {
+        "Id": 116,
+        "Response": "Să deschidă portierele vehiculului în timpul mersului sau să pornească de pe loc cu portierele deschise.",
+        "IsRight": true,
+        "QueryId": 42
+      },
+      {
+        "Id": 117,
+        "Response": "După oprirea vehiculului la semnalul lucrătorului de poliţie să rămînă în vehicul, ţinînd braţele pe volan, pînă la apropierea poliţistului.",
+        "IsRight": false,
+        "QueryId": 42
+      },
+      {
+        "Id": 118,
+        "Response": "Să efectueze oricare din acţiunile enumerate.",
+        "IsRight": false,
+        "QueryId": 42
+      }
+    ]
+  },
+  {
+    "Id": 43,
+    "ChapterKey": "capitolul1",
+    "Query": "Conducătorul autoturismului galben a observat, că autobuzul ce se deplasează pe banda alăturată a început să reducă viteza. Cum va proceda acesta în situația dată?",
+    "ImageUri": "/capitolul1/c2f71d79-16f6-4d68-8ee9-802b0080f17d.png",
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "În cazul în care înaintea trecerii pentru pietoni s-a oprit sau a redus viteza vreun vehicul, conducătorii altor vehicule care se deplasează pe benzile alăturate pot continua deplasarea numai asigurîndu-se că în faţa vehiculului menţionat nu sînt pietoni. P. 11 f), alineatul 2.",
+    "Responses": [
+      {
+        "Id": 119,
+        "Response": "Va mări viteza în scopul lărgirii cîmpului vizual.",
+        "IsRight": false,
+        "QueryId": 43
+      },
+      {
+        "Id": 120,
+        "Response": "Va frîna brusc, fără a decupla ambreiajul.",
+        "IsRight": false,
+        "QueryId": 43
+      },
+      {
+        "Id": 121,
+        "Response": "Va continua deplasarea cu aceeaşi viteză.",
+        "IsRight": false,
+        "QueryId": 43
+      },
+      {
+        "Id": 122,
+        "Response": "Va reduce viteza, luând în consideraţie faptul că pe trecere pot apărea pietonii.",
+        "IsRight": true,
+        "QueryId": 43
+      }
+    ]
+  },
+  {
+    "Id": 44,
+    "ChapterKey": "capitolul1",
+    "Query": "În ce caz conducătorului îi este interzis să conducă vehiculul?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorului de vehicul îi este interzis să conducă vehiculul în stare de ebrietate, sub influenţa drogurilor sau altor substanţe contraindicate, sub influenţa preparatelor medicamentoase care provoacă reducerea reacţiei, fiind bolnav, traumatizat sau într-o stare avansată de oboseală de natură să-i afecteze capacitatea de conducere. P. 14 a).",
+    "Responses": [
+      {
+        "Id": 123,
+        "Response": "Doar sub influența preparatelor medicamentoase care provoacă reducerea reacției.",
+        "IsRight": false,
+        "QueryId": 44
+      },
+      {
+        "Id": 124,
+        "Response": "Doar în stare de ebrietate, sub influența drogurilor sau altor substanțe contraindicate.",
+        "IsRight": false,
+        "QueryId": 44
+      },
+      {
+        "Id": 125,
+        "Response": "Doar fiind bolnav, traumatizat sau într-o stare avansată de oboseală de natură să-i afecteze capacitatea de conducere.",
+        "IsRight": false,
+        "QueryId": 44
+      },
+      {
+        "Id": 126,
+        "Response": "În oricare din cazurile enumerate.",
+        "IsRight": true,
+        "QueryId": 44
+      }
+    ]
+  },
+  {
+    "Id": 45,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce îi este interzis conducătorului de vehicul?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorului de vehicul îi este interzis să poarte convorbiri telefonice în timpul deplasării, cu excepţia cazurilor în care vehiculul sau telefonul sînt echipate cu dispozitiv «mîini libere». P. 14 d).",
+    "Responses": [
+      {
+        "Id": 127,
+        "Response": "Să execute manevra de mers cu spatele cu centura de siguranţă necuplată.",
+        "IsRight": false,
+        "QueryId": 45
+      },
+      {
+        "Id": 128,
+        "Response": "Să poarte vesta de protecţie-avertizare fluorescent-reflectorizantă, în cazul în care acesta execută intervenţii la vehiculul oprit pe platforma drumului public.",
+        "IsRight": false,
+        "QueryId": 45
+      },
+      {
+        "Id": 129,
+        "Response": "Să poarte convorbiri telefonice în timpul deplasării, cu excepţia cazurilor în care vehiculul sau telefonul sînt echipate cu dispozitiv «mîini libere».",
+        "IsRight": true,
+        "QueryId": 45
+      },
+      {
+        "Id": 130,
+        "Response": "Să efectueze acţiunile enumerate în punctele 1 şi 2.",
+        "IsRight": false,
+        "QueryId": 45
+      },
+      {
+        "Id": 131,
+        "Response": "Să efectueze oricare din acţiunile enumerate.",
+        "IsRight": false,
+        "QueryId": 45
+      }
+    ]
+  },
+  {
+    "Id": 46,
+    "ChapterKey": "capitolul1",
+    "Query": "Conducătorul de vehicul care a ajuns la locul unde s-a produs un accident în traficul rutier, în lipsa serviciilor de intervenţie, este obligat să oprească şi, în caz de necesitate:",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul care a ajuns la locul unde s-a produs un accident în traficul rutier, în lipsa serviciilor de intervenţie, este obligat să oprească şi, în caz de necesitate să acorde primul ajutor persoanelor traumatizate şi să anunţe despre accident poliţia. P. 12, 2) a), b).",
+    "Responses": [
+      {
+        "Id": 132,
+        "Response": "Doar să anunţe despre accident poliţia.",
+        "IsRight": false,
+        "QueryId": 46
+      },
+      {
+        "Id": 133,
+        "Response": "Doar să acorde primul ajutor persoanelor traumatizate.",
+        "IsRight": false,
+        "QueryId": 46
+      },
+      {
+        "Id": 134,
+        "Response": "Să execute ambele acţiuni.",
+        "IsRight": true,
+        "QueryId": 46
+      }
+    ]
+  },
+  {
+    "Id": 48,
+    "ChapterKey": "capitolul1",
+    "Query": "Acordarea primului ajutor persoanelor traumatizate într-un accident din traficul rutier, pentru conducătorul de vehicul este:",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul care a ajuns la locul unde s-a produs un accident în traficul rutier, în lipsa serviciilor de intervenţie, este obligat să oprească şi, în caz de necesitate să acorde primul ajutor persoanelor traumatizate. P. 12, 2) a).",
+    "Responses": [
+      {
+        "Id": 147,
+        "Response": "O obligaţie regulamentară.",
+        "IsRight": true,
+        "QueryId": 48
+      },
+      {
+        "Id": 148,
+        "Response": "O acţiune benevolă.",
+        "IsRight": false,
+        "QueryId": 48
+      }
+    ]
+  },
+  {
+    "Id": 49,
+    "ChapterKey": "capitolul1",
+    "Query": "Care sunt cerințele pe care trebuie să le respecte persoana care conduce un vehicul?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Persoana care conduce un vehicul trebuie să posede cunoştinţe şi să execute cerinţele Regulamentului circulaţiei rutiere, să aibă dexteritatea necesară de a conduce în siguranţă vehiculul pe drum, precum şi să posede cunoştinţe de acordare a primului ajutor persoanelor traumatizate ca urmare a accidentului în traficul rutier. P. 10 1), b), c).",
+    "Responses": [
+      {
+        "Id": 139,
+        "Response": "Să asigure transportarea la locul de serviciu a lucrătorilor de poliţie, la solicitarea acestora.",
+        "IsRight": false,
+        "QueryId": 49
+      },
+      {
+        "Id": 140,
+        "Response": "Să posede cunoştinţe şi să execute cerinţele Regulamentului circulaţiei rutiere, precum şi să posede dexteritatea necesară de a conduce în siguranţă vehiculul pe drum.",
+        "IsRight": false,
+        "QueryId": 49
+      },
+      {
+        "Id": 141,
+        "Response": "Să posede cunoştinţe de acordare a primului ajutor persoanelor traumatizate ca urmare a accidentului în traficul rutier.",
+        "IsRight": false,
+        "QueryId": 49
+      },
+      {
+        "Id": 142,
+        "Response": "Să corespundă cerinţelor enumerate în punctele 2 şi 3.",
+        "IsRight": true,
+        "QueryId": 49
+      },
+      {
+        "Id": 143,
+        "Response": "Să corespundă tuturor cerinţelor enumerate.",
+        "IsRight": false,
+        "QueryId": 49
+      }
+    ]
+  },
+  {
+    "Id": 50,
+    "ChapterKey": "capitolul1",
+    "Query": "Este obligat conducătorul vehiculului să asigure transportarea lucrătorilor de poliţie, la solicitarea acestora, la locurile unde s-au produs accidente în traficul rutier sau calamităţi?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat la solicitarea lucrătorilor de poliţie, să asigure transportarea acestora la locurile unde s-au produs accidente în traficul rutier sau calamităţi, în cazul în care accidentul sau calamitatea a avut loc în direcţia de deplasare a vehiculului. P. 11 k), alineatul 1.",
+    "Responses": [
+      {
+        "Id": 149,
+        "Response": "Este obligat indiferent de direcţia de deplasare.",
+        "IsRight": false,
+        "QueryId": 50
+      },
+      {
+        "Id": 150,
+        "Response": "Nu este obligat.",
+        "IsRight": false,
+        "QueryId": 50
+      },
+      {
+        "Id": 151,
+        "Response": "Este obligat numai în cazul în care accidentul sau calamitatea a avut loc în direcţia de deplasare a vehiculului.",
+        "IsRight": true,
+        "QueryId": 50
+      }
+    ]
+  },
+  {
+    "Id": 51,
+    "ChapterKey": "capitolul1",
+    "Query": "Care din conducătorii vehiculelor din imagine este obligat să cedeze trecerea pietonilor?",
+    "ImageUri": "/capitolul1/edf4582e-d13e-4c91-ab23-410091d66829.png",
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat la trecerile pentru pietoni cu circulaţia nedirijată să cedeze trecerea pietonilor aflați în traversarea drumului pe partea carosabilului în direcția de mers a vehiculului. P. 11 f), alineatul 1.",
+    "Responses": [
+      {
+        "Id": 180,
+        "Response": "Ambii conducători.",
+        "IsRight": false,
+        "QueryId": 51
+      },
+      {
+        "Id": 181,
+        "Response": "Numai conducătorul motocicletei.",
+        "IsRight": true,
+        "QueryId": 51
+      },
+      {
+        "Id": 182,
+        "Response": "Numai conducătorul autoturismului.",
+        "IsRight": false,
+        "QueryId": 51
+      }
+    ]
+  },
+  {
+    "Id": 52,
+    "ChapterKey": "capitolul1",
+    "Query": "Conducătorul de vehicul este obligat:",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să conducă vehiculul cu atenţie sporită la apariţia autovehiculelor echipate cu lumină giratorie de culoare portocalie sau a autovehiculelor care poartă semnele distinctive «Copii», «Conducător surdomut», «Conducător invalid», «Şcoala», «Încărcătură cu gabarit depăşit», «Încărcătura periculoasă» sau «Conducător începător». (Anexa nr. 6), P. 11 e).",
+    "Responses": [
+      {
+        "Id": 155,
+        "Response": "Să poarte vesta de protecţie-avertizare fluorescent-reflectorizantă, în cazul în care acesta se deplasează pe drumurile din afara localităţilor.",
+        "IsRight": false,
+        "QueryId": 52
+      },
+      {
+        "Id": 156,
+        "Response": "Să conducă vehiculul cu atenţie sporită la apariţia autovehiculelor care poartă semnul distinctiv «Copii», «Conducător surdomut», «Conducător invalid», «Şcoala», «Încărcătură cu gabarit depăşit», «Încărcătura periculoasă» sau «Conducător începător».",
+        "IsRight": true,
+        "QueryId": 52
+      },
+      {
+        "Id": 157,
+        "Response": "Să pună vehiculul la dispoziţia lucrătorilor de poliţie pentru transportarea vehiculelor defectate în urma accidentului din traficul rutier sau celor rămase în pană.",
+        "IsRight": false,
+        "QueryId": 52
+      },
+      {
+        "Id": 158,
+        "Response": "Să respecte toate exigenţele enumerate.",
+        "IsRight": false,
+        "QueryId": 52
+      }
+    ]
+  },
+  {
+    "Id": 53,
+    "ChapterKey": "capitolul1",
+    "Query": "Care conducători sînt exceptaţi de la obligaţia de a cupla centura de siguranţă la deplasarea prin localităţi?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să poarte centura de siguranţă şi să se asigure că şi pasagerii au cuplat centurile, dacă autovehiculul este echipat cu acestea. Sînt exceptaţi de la obligaţia menţionată în localităţi, conducătorii vehiculelor cu regim prioritar de circulaţie în timpul executării unei misiuni urgente de serviciu. P. 11 b).",
+    "Responses": [
+      {
+        "Id": 159,
+        "Response": "Conducătorii vehiculelor cu regim prioritar de circulaţie în timpul executării unei misiuni urgente de serviciu.",
+        "IsRight": true,
+        "QueryId": 53
+      },
+      {
+        "Id": 160,
+        "Response": "Conducătorii invalizi.",
+        "IsRight": false,
+        "QueryId": 53
+      },
+      {
+        "Id": 161,
+        "Response": "Pasagerii de pe bancheta din spate a autoturismului.",
+        "IsRight": false,
+        "QueryId": 53
+      },
+      {
+        "Id": 162,
+        "Response": "Conducătorii şi pasagerii taximetrelor.",
+        "IsRight": false,
+        "QueryId": 53
+      },
+      {
+        "Id": 163,
+        "Response": "Toţi participanţii la trafic menţionaţi.",
+        "IsRight": false,
+        "QueryId": 53
+      }
+    ]
+  },
+  {
+    "Id": 54,
+    "ChapterKey": "capitolul1",
+    "Query": "Conducătorul de vehicul, implicat în accidentul din traficul rutier, este obligat să elibereze carosabilul în cazul în care prezența vehiculului pe carosabil face dificil sau blochează traficul rutier?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul implicat într-un accident în traficul rutier este obligat să elibereze carosabilul deplasînd vehiculul pe acostament ori cît mai aproape de bordura trotuarului, atunci cînd în urma acestui accident nu sînt persoane decedate şi/sau traumatizate, iar prezenţa pe carosabil a vehiculului implicat în accident face dificil sau blochează traficul rutier precum şi să marcheze locul iniţial al vehiculului, obiectelor ce ţin de accident şi a persoanei traumatizate, dacă se impune schimbarea poziţiei acestora pentru acordarea primului ajutor, transportarea persoanei traumatizate cu propriul vehicul la unitatea medicală sau pentru eliberarea carosabilului. P. 12 1), d), e).",
+    "Responses": [
+      {
+        "Id": 164,
+        "Response": "Nu este obligat.",
+        "IsRight": false,
+        "QueryId": 54
+      },
+      {
+        "Id": 165,
+        "Response": "Este obligat numai după sosirea la locul accidentului a lucrătorilor de poliţie.",
+        "IsRight": false,
+        "QueryId": 54
+      },
+      {
+        "Id": 166,
+        "Response": "Este obligat, deplasînd vehiculul pe acostament ori cît mai aproape de bordura trotuarului, atunci cînd în urma accidentului nu sînt persoane decedate şi/sau traumatizate, prealabil marcînd locul iniţial al acestuia şi locul obiectelor ce ţin de accident.",
+        "IsRight": true,
+        "QueryId": 54
+      },
+      {
+        "Id": 167,
+        "Response": "Este obligat în toate cazurile, prealabil marcînd locul iniţial al vehiculului.",
+        "IsRight": false,
+        "QueryId": 54
+      }
+    ]
+  },
+  {
+    "Id": 55,
+    "ChapterKey": "capitolul1",
+    "Query": "Conducătorul cărui vehicul este obligat să cedeze trecerea pietonilor?",
+    "ImageUri": "/capitolul1/ec589181-2a66-48c5-b154-6f6a662e92cf.png",
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat la trecerile pentru pietoni cu circulaţia nedirijată să cedeze trecerea pietonilor aflați în traversarea drumului pe partea carosabilului în direcția de mers a vehiculului. P. 11 f), alineatul 1.",
+    "Responses": [
+      {
+        "Id": 183,
+        "Response": "Ambii conducători.",
+        "IsRight": false,
+        "QueryId": 55
+      },
+      {
+        "Id": 184,
+        "Response": "Numai conducătorul motocicletei.",
+        "IsRight": true,
+        "QueryId": 55
+      },
+      {
+        "Id": 185,
+        "Response": "Numai conducătorul autoturismului.",
+        "IsRight": false,
+        "QueryId": 55
+      }
+    ]
+  },
+  {
+    "Id": 56,
+    "ChapterKey": "capitolul1",
+    "Query": "Care din acțiuni este interzisă conducătorului de vehicul?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorului de vehicul îi este interzis să intre pe drumurile publice modernizate cu vehicule care au pe roţi sau în caroserie noroi, materiale de construcţie etc., ce se depun pe carosabil, sau cu vehicule din care se scurg produse petroliere. P. 14 e).",
+    "Responses": [
+      {
+        "Id": 171,
+        "Response": "Să poarte vesta de protecţie-avertizare fluorescent-reflectorizantă, în cazul în care execută intervenţii la vehiculul oprit pe acostament.",
+        "IsRight": false,
+        "QueryId": 56
+      },
+      {
+        "Id": 172,
+        "Response": "Să intre pe drumurile publice modernizate cu vehicule care au pe roţi sau în caroserie noroi, materiale de construcţie etc., ce se depun pe carosabil, sau cu vehicule din care se scurg produse petroliere.",
+        "IsRight": true,
+        "QueryId": 56
+      },
+      {
+        "Id": 173,
+        "Response": "Să efectueze oricare din acţiunile menţionate.",
+        "IsRight": false,
+        "QueryId": 56
+      }
+    ]
+  },
+  {
+    "Id": 57,
+    "ChapterKey": "capitolul1",
+    "Query": "Persoana care se instruieşte în conducerea autovehiculului este obligată să cupleze centura de siguranţă?",
+    "ImageUri": null,
+    "Thema": "[1.2] Conducătorii de vehicule şi obligațiile acestora",
+    "Comment": "Conducătorul de vehicul este obligat să poarte centura de siguranţă şi să se asigure că şi pasagerii au cuplat centurile, dacă autovehiculul este echipat cu acestea. Sînt exceptaţi de la obligaţia menţionată: - conducătorii care execută manevra de mers cu spatele; - instructorii auto în timpul instruirii cursanţilor; - persoanele care deţin certificat de scutire pe motiv medical grav, eliberat de autoritatea competentă; - în localităţi, conducătorii vehiculelor cu regim prioritar de circulaţie în timpul executării unei misiuni urgente de serviciu. P. 11 b).",
+    "Responses": [
+      {
+        "Id": 174,
+        "Response": "Nu este obligată, dacă-i permite instructorul.",
+        "IsRight": false,
+        "QueryId": 57
+      },
+      {
+        "Id": 175,
+        "Response": "Nu este obligată.",
+        "IsRight": false,
+        "QueryId": 57
+      },
+      {
+        "Id": 176,
+        "Response": "Este obligată.",
+        "IsRight": true,
+        "QueryId": 57
+      }
+    ]
+  },
+  {
+    "Id": 58,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce înțelegem prin termenul «depăşire»?",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Depăşire - devansarea unui vehicul în mers, în cazul în care se impune ieşirea de pe banda de circulaţie iniţială. Deplasarea vehiculelor pe o bandă a carosabilului cu o viteză mai mare decît viteza vehiculelor de pe banda alăturată nu se consideră depăşire. P. 7, alineatul 19.",
+    "Responses": [
+      {
+        "Id": 186,
+        "Response": "Devansarea unui vehicul în mers, în cazul în care se impune ieşirea de pe banda de circulaţie iniţială. Deplasarea vehiculelor pe o bandă a carosabilului cu o viteză mai mare decît viteza vehiculelor de pe banda alăturată nu se consideră depăşire.",
+        "IsRight": true,
+        "QueryId": 58
+      },
+      {
+        "Id": 187,
+        "Response": "Devansarea unuia sau cîtorva vehicule, care se deplasează cu o viteză mai mică pe banda de circulaţie din dreapta.",
+        "IsRight": false,
+        "QueryId": 58
+      },
+      {
+        "Id": 188,
+        "Response": "Devansarea unuia sau cîtorva vehicule, care se deplasează cu o viteză mai mică pe banda de circulaţie din stînga.",
+        "IsRight": false,
+        "QueryId": 58
+      }
+    ]
+  },
+  {
+    "Id": 59,
+    "ChapterKey": "capitolul1",
+    "Query": "Termenul «cedează trecerea» înseamnă:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Cedează trecerea - obligaţia unui participant la trafic să se abţină de la mişcare dacă aceasta va impune alţi participanţi, care au prioritate, să modifice în mod brusc direcţia, viteza sau să oprească. P. 7, alineatul 12.",
+    "Responses": [
+      {
+        "Id": 189,
+        "Response": " Imobilizarea vehiculului în scopul înlăturării obstacolului pe un anumit sector de drum.",
+        "IsRight": false,
+        "QueryId": 59
+      },
+      {
+        "Id": 190,
+        "Response": " Obligaţia unui participant la trafic să se abţină de la mişcare dacă aceasta va impune alţi participanţi, care au prioritate, să modifice în mod brusc direcţia, viteza sau să oprească.",
+        "IsRight": true,
+        "QueryId": 59
+      },
+      {
+        "Id": 191,
+        "Response": " Imobilizarea vehiculului în scopul determinării situaţiei reale de drum în care se află vehiculul la momentul respectiv.",
+        "IsRight": false,
+        "QueryId": 59
+      }
+    ]
+  },
+  {
+    "Id": 60,
+    "ChapterKey": "capitolul1",
+    "Query": "Circulaţia pe drumurile publice a vehiculelor ce au volanul amplasat pe partea dreaptă a axei longitudinale este permisă numai celor:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "În Republica Moldova vehiculele se conduc pe partea dreaptă a carosabilului în sensul de mers. Se interzice circulaţia pe drumurile publice a autovehiculelor care au volanul amplasat pe partea dreaptă a axei longitudinale, cu excepţia vehiculelor aflate în traficul internaţional. P. 2.",
+    "Responses": [
+      {
+        "Id": 192,
+        "Response": " Care aparţin consulatelor diplomatice.",
+        "IsRight": false,
+        "QueryId": 60
+      },
+      {
+        "Id": 193,
+        "Response": " Aflate în traficul internaţional.",
+        "IsRight": true,
+        "QueryId": 60
+      },
+      {
+        "Id": 194,
+        "Response": " Cu regim prioritar de circulaţie.",
+        "IsRight": false,
+        "QueryId": 60
+      },
+      {
+        "Id": 195,
+        "Response": " Tuturor vehiculelor enumerate.",
+        "IsRight": false,
+        "QueryId": 60
+      }
+    ]
+  },
+  {
+    "Id": 61,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce se înţelege prin noțiunea «oprire fortuită»?",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Oprire fortuită - imobilizarea vehiculului din cauza defecţiunilor tehnice, eventualului pericol legat de transportarea încărcăturii, starea sănătăţii conducătorului (pasagerului) sau a obstacolului de pe drum. P. 7, alineatul 28.",
+    "Responses": [
+      {
+        "Id": 196,
+        "Response": " Imobilizarea vehiculului din cauza defecţiunilor tehnice, eventualului pericol legat de transportarea încărcăturii, starea sănătăţii conducătorului (pasagerului) sau obstacolului de pe drum.",
+        "IsRight": true,
+        "QueryId": 61
+      },
+      {
+        "Id": 197,
+        "Response": " Imobilizarea vehiculului pe un timp nu mai mare de 5 min., precum şi pe un timp mai mare, în cazul în care este necesar de a îmbarca sau a debarca persoane, ori a încărca sau descărca bunuri.",
+        "IsRight": false,
+        "QueryId": 61
+      },
+      {
+        "Id": 198,
+        "Response": " Imobilizarea vehiculului pe drum pentru un motiv altul decît acela, de a îmbarca sau a debarca persoane, de a încărca sau descărca bunuri, în cazul în care timpul necesar pentru aceasta nu este limitat.",
+        "IsRight": false,
+        "QueryId": 61
+      }
+    ]
+  },
+  {
+    "Id": 62,
+    "ChapterKey": "capitolul1",
+    "Query": "Precizați cîte carosabile are drumul din imagine?",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Carosabil - porţiune din platforma drumului destinată circulaţiei vehiculelor. Drumul poate avea mai multe carosabile separate unul de altul prin benzi de separare. P. 7, alineatul 11; Bandă de separare - element al drumului, evidenţiat constructiv şi/sau prin marcaj, care separă carosabilele limitrofe şi care nu este destinat pentru deplasarea şi oprirea pe el a vehiculelor. P. 7, alineatul 9.",
+    "Responses": [
+      {
+        "Id": 199,
+        "Response": "Unu.",
+        "IsRight": true,
+        "QueryId": 62
+      },
+      {
+        "Id": 200,
+        "Response": "Două.",
+        "IsRight": false,
+        "QueryId": 62
+      },
+      {
+        "Id": 201,
+        "Response": "Patru.",
+        "IsRight": false,
+        "QueryId": 62
+      }
+    ]
+  },
+  {
+    "Id": 63,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «bandă de circulaţie» semnifică:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Bandă de circulaţie - spaţiu longitudinal al carosabilului, delimitat sau nu prin marcaje rutiere, avînd o lăţime corespunzătoare pentru circulaţia cu uşurinţă a unui şir de vehicule, altele decît vehiculele care se deplasează pe două roţi. P. 7, alineatul 8.",
+    "Responses": [
+      {
+        "Id": 202,
+        "Response": " Spaţiul longitudinal al carosabilului, delimitat sau nu prin marcaje rutiere, avînd o lăţime corespunzătoare pentru circulaţia cu uşurinţă a unui şir de vehicule, altele decît vehiculele care se deplasează pe două roţi.",
+        "IsRight": true,
+        "QueryId": 63
+      },
+      {
+        "Id": 203,
+        "Response": " Fîşia de teren, de regulă, plantată, care desparte drumul în două sau mai multe carosabile.",
+        "IsRight": false,
+        "QueryId": 63
+      },
+      {
+        "Id": 204,
+        "Response": " Elementul drumului destinat circulaţiei pietonilor ce se află în imediata apropiere de carosabil sau este separat de el cu o zonă verde.",
+        "IsRight": false,
+        "QueryId": 63
+      }
+    ]
+  },
+  {
+    "Id": 64,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «oprire voluntară» înseamnă:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Oprire voluntară - imobilizarea vehiculului pe drum, atît cît este necesar pentru a îmbarca sau a debarca persoane ori a încărca sau a descărca bunuri, în timpul în care conducătorul rămîne în vehicul ori în apropierea acestuia, pentru a putea, la nevoie, să-l deplaseze. P. 7, alineatul 30.",
+    "Responses": [
+      {
+        "Id": 205,
+        "Response": "Imobilizarea vehiculului pe drum atît cît este necesar pentru a îmbarca sau a debarca persoane, ori a încărca sau a descărca bunuri, în timpul în care conducătorul rămîne în vehicul ori în apropierea acestuia, pentru a putea, la nevoie să-l deplaseze.",
+        "IsRight": true,
+        "QueryId": 64
+      },
+      {
+        "Id": 206,
+        "Response": "Imobilizarea vehiculului din cauza defecţiunilor tehnice, eventualului pericol legat de transportarea încărcăturii, starea conducătorului (pasagerului) sau obstacolului de pe drum.",
+        "IsRight": false,
+        "QueryId": 64
+      },
+      {
+        "Id": 207,
+        "Response": "Imobilizarea vehiculului pe drum pentru un motiv altul decît acela, de a îmbarca sau a debarca persoane, de a încărca sau a descărca bunuri, în cazul în care timpul necesar pentru aceasta nu este limitat.",
+        "IsRight": false,
+        "QueryId": 64
+      }
+    ]
+  },
+  {
+    "Id": 65,
+    "ChapterKey": "capitolul1",
+    "Query": "«vehicul lung» este vehiculul, a cărui lungime depăşeşte:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Vehicul lung - vehiculul a cărui lungime depăşeşte 12 m. P. 7, alineatul 51.",
+    "Responses": [
+      {
+        "Id": 208,
+        "Response": "16 m.",
+        "IsRight": false,
+        "QueryId": 65
+      },
+      {
+        "Id": 209,
+        "Response": "10 m.",
+        "IsRight": false,
+        "QueryId": 65
+      },
+      {
+        "Id": 210,
+        "Response": "12 m.",
+        "IsRight": true,
+        "QueryId": 65
+      },
+      {
+        "Id": 211,
+        "Response": "14 m.",
+        "IsRight": false,
+        "QueryId": 65
+      },
+      {
+        "Id": 212,
+        "Response": "20 m",
+        "IsRight": false,
+        "QueryId": 65
+      }
+    ]
+  },
+  {
+    "Id": 66,
+    "ChapterKey": "capitolul1",
+    "Query": "Orice participant la trafic care respectă Regulamentul circulaţiei rutiere este în drept să conteze pe faptul că:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Orice participant la trafic care respectă Regulamentul circulaţiei rutiere este în drept să conteze pe faptul că şi ceilalţi participanţi la trafic execută cerinţele acestui Regulament. P. 4.",
+    "Responses": [
+      {
+        "Id": 213,
+        "Response": "Ceilalţi participanţi la trafic de asemenea execută cerinţele acestui Regulament.",
+        "IsRight": true,
+        "QueryId": 66
+      },
+      {
+        "Id": 214,
+        "Response": "Persoana împuternicită cu reglementarea, îndrumarea şi controlul circulaţiei pe drumurile publice, îi va acorda prioritate în trecerea intersecţiei.",
+        "IsRight": false,
+        "QueryId": 66
+      },
+      {
+        "Id": 215,
+        "Response": "Executarea semnalului de avertizare prin semnalizatorul de direcţie îi acordă prioritate în trecere.",
+        "IsRight": false,
+        "QueryId": 66
+      }
+    ]
+  },
+  {
+    "Id": 67,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «staţionare» înseamnă:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Staţionare - imobilizarea vehiculului pe drum pentru un motiv, altul decît acela de a îmbarca sau a debarca persoane, de a încărca sau a descărca bunuri, în cazul în care timpul necesar pentru aceasta nu este limitat. P. 7, alineatul 40.",
+    "Responses": [
+      {
+        "Id": 216,
+        "Response": "Imobilizarea vehiculului pe drum atît cît este necesar pentru a îmbarca sau a debarca persoane, ori a încărca sau a descărca bunuri, în timpul în care conducătorul rămîne în vehicul ori în apropierea acestuia, pentru a putea, la nevoie să-l deplaseze.",
+        "IsRight": false,
+        "QueryId": 67
+      },
+      {
+        "Id": 217,
+        "Response": "Imobilizarea vehiculului pe drum pentru un motiv altul decît acela, de a îmbarca sau a debarca persoane, de a încărca sau a descărca bunuri, în cazul în care timpul necesar pentru aceasta nu este limitat.",
+        "IsRight": true,
+        "QueryId": 67
+      },
+      {
+        "Id": 218,
+        "Response": "Imobilizarea vehiculului din cauza defecţiunilor tehnice, eventualului pericol legat de transportarea încărcăturii, starea conducătorului (pasagerului) sau obstacolului de pe drum.",
+        "IsRight": false,
+        "QueryId": 67
+      }
+    ]
+  },
+  {
+    "Id": 68,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «teritoriu adiacent drumului» semnifică:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Teritoriu adiacent drumului - teritoriul din imediata apropiere a drumului (curţi, locuri de parcare, staţii de aprovizionare cu combustibil, întreprinderi etc.). P. 7, alineatul 41.",
+    "Responses": [
+      {
+        "Id": 219,
+        "Response": "Zonă dintr-o localitate unde se aplică reguli speciale de circulaţie, avînd intrările şi ieşirile semnalizate prin indicatoarele «Zonă rezidenţială» şi «Sfîrşitul zonei rezidenţiale».",
+        "IsRight": false,
+        "QueryId": 68
+      },
+      {
+        "Id": 220,
+        "Response": "Ansamblul continuu de imobile, ale cărui intrări şi ieşiri sînt semnalizate prin indicatoarele rutiere «Intrare în localitate» şi «Ieşire din localitate».",
+        "IsRight": false,
+        "QueryId": 68
+      },
+      {
+        "Id": 221,
+        "Response": "Teritoriul în imediata apropiere a drumului (curţi, locuri de parcare, staţii de aprovizionare cu combustibil, întreprinderi etc.).",
+        "IsRight": true,
+        "QueryId": 68
+      }
+    ]
+  },
+  {
+    "Id": 69,
+    "ChapterKey": "capitolul1",
+    "Query": "Care cerințe sînt obligaţi să le respecte participanţii la trafic?",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Participanţii la trafic sînt obligaţi să respecte regulile de circulaţie, semnificaţia mijloacelor de semnalizare rutieră, semnalele şi indicaţiile agentului de circulaţie, ... P. 3.",
+    "Responses": [
+      {
+        "Id": 222,
+        "Response": " Numai semnalele şi indicaţiile agentului de circulaţie.",
+        "IsRight": false,
+        "QueryId": 69
+      },
+      {
+        "Id": 223,
+        "Response": " Numai regulile de circulaţie.",
+        "IsRight": false,
+        "QueryId": 69
+      },
+      {
+        "Id": 224,
+        "Response": " Numai semnificaţia mijloacelor de semnalizare rutieră.",
+        "IsRight": false,
+        "QueryId": 69
+      },
+      {
+        "Id": 225,
+        "Response": " Toate cerinţele enumerate.",
+        "IsRight": true,
+        "QueryId": 69
+      }
+    ]
+  },
+  {
+    "Id": 70,
+    "ChapterKey": "capitolul1",
+    "Query": "Ce se înţelege prin termenul «trecere la nivel cu calea ferată»?",
+    "ImageUri": "/capitolul1/e8e87b13-fcf1-4e4a-a579-b2c90473f88e.jpg",
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Trecere la nivel cu calea ferată - intersectarea drumului la acelaşi nivel cu calea ferată. P. 7, alineatul 43.",
+    "Responses": [
+      {
+        "Id": 226,
+        "Response": " Intersectarea drumului la acelaşi nivel cu calea ferată (imag. A). ",
+        "IsRight": true,
+        "QueryId": 70
+      },
+      {
+        "Id": 227,
+        "Response": " Intersectarea denivelată a drumului (deasupra) cu calea ferată (imag. B).",
+        "IsRight": false,
+        "QueryId": 70
+      },
+      {
+        "Id": 228,
+        "Response": " Intersectarea denivelată a drumului (dedesubt) cu calea ferată (imag. C).",
+        "IsRight": false,
+        "QueryId": 70
+      },
+      {
+        "Id": 229,
+        "Response": " Oricare din tipurile de intersecţii ale drumului cu căile ferate, arătate în imagini.",
+        "IsRight": false,
+        "QueryId": 70
+      }
+    ]
+  },
+  {
+    "Id": 71,
+    "ChapterKey": "capitolul1",
+    "Query": "Drumul pe care vă deplasaţi are:",
+    "ImageUri": "/capitolul1/a0c358ff-ba19-4f16-8ff8-3f2857bdbfb7.jpg",
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Carosabil - porţiune din platforma drumului destinată circulaţiei vehiculelor. Drumul poate avea mai multe carosabile separate unul de altul prin benzi de separare, P. 7, alineatul 11; Bandă de separare - element al drumului, evidenţiat constructiv şi/sau prin marcaj, care separă carosabilele limitrofe şi care nu este destinat pentru deplasarea şi oprirea pe el a vehiculelor, P. 7, alineatul 9.",
+    "Responses": [
+      {
+        "Id": 230,
+        "Response": " Un carosabil.",
+        "IsRight": false,
+        "QueryId": 71
+      },
+      {
+        "Id": 231,
+        "Response": " Patru carosabile.",
+        "IsRight": false,
+        "QueryId": 71
+      },
+      {
+        "Id": 232,
+        "Response": " Două carosabile.",
+        "IsRight": true,
+        "QueryId": 71
+      }
+    ]
+  },
+  {
+    "Id": 72,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «drum cu prioritate» înseamnă:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Drum cu prioritate - drumul semnalizat prin indicatoarele rutiere «Intersecţie cu un drum fără prioritate», «Drum cu prioritate» sau «Autostrada» ori drumul modernizat sau împietruit în raport cu drumul rudimentar. P. 7, alineatul 20.",
+    "Responses": [
+      {
+        "Id": 233,
+        "Response": "Drumul semnalizat prin unul din indicatoarele rutiere «Intersecţie cu un drum fără prioritate», «Drum cu prioritate» sau «Autostradă» ori drumul modernizat sau împietruit în raport cu drumul rudimentar.",
+        "IsRight": true,
+        "QueryId": 72
+      },
+      {
+        "Id": 234,
+        "Response": "Numai drumul semnalizat prin indicatorul «Autostradă».",
+        "IsRight": false,
+        "QueryId": 72
+      },
+      {
+        "Id": 235,
+        "Response": "Numai drumul modernizat ori împietruit în raport cu drumul rudimentar.",
+        "IsRight": false,
+        "QueryId": 72
+      },
+      {
+        "Id": 236,
+        "Response": "Numai drumul semnalizat prin unul din indicatoarele «Intersecţie cu un drum fără prioritate» sau «Drum cu prioritate».",
+        "IsRight": false,
+        "QueryId": 72
+      }
+    ]
+  },
+  {
+    "Id": 73,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «oprire de serviciu» înseamnă:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Oprire de serviciu - întreruperea deplasării vehiculului la semnalul de interzicere al agentului de circulaţie, semaforului, la indicator sau pentru a ceda trecerea vehiculului (pietonului) ce are prioritate. P. 7, alineatul 29.",
+    "Responses": [
+      {
+        "Id": 237,
+        "Response": " Imobilizarea vehiculului pentru a îmbarca sau a debarca persoane ori a încărca sau a descărca bunuri.",
+        "IsRight": false,
+        "QueryId": 73
+      },
+      {
+        "Id": 238,
+        "Response": " Întreruperea deplasării vehiculului la semnalul de interzicere al agentului de circulaţie, semaforului, la indicator sau pentru a ceda trecerea vehiculului (pietonului) ce are prioritate.",
+        "IsRight": true,
+        "QueryId": 73
+      },
+      {
+        "Id": 239,
+        "Response": " Imobilizarea vehiculului din cauza defecţiunilor tehnice, stării sănătăţii conducătorului (pasagerului) sau a obstacolului de pe drum.",
+        "IsRight": false,
+        "QueryId": 73
+      }
+    ]
+  },
+  {
+    "Id": 74,
+    "ChapterKey": "capitolul1",
+    "Query": "Noțiunea «platforma drumului» înseamnă:",
+    "ImageUri": null,
+    "Thema": "[1.1] Dispoziții generale. Noțiuni şi termeni de bază",
+    "Comment": "Platforma drumului - partea drumului care cuprinde carosabilul (carosabilele), banda (benzile) de separare şi acostamentele acestuia. P. 7, alineatul 34.",
+    "Responses": [
+      {
+        "Id": 240,
+        "Response": " Element al drumului evidenţiat prin marcaj care nu este destinat pentru deplasarea şi oprirea pe el a vehiculelor.",
+        "IsRight": false,
+        "QueryId": 74
+      },
+      {
+        "Id": 241,
+        "Response": " Spaţiul longitudinal al drumului avînd o lăţime corespunzătoare pentru circulaţia cu uşurinţă a unui şir de vehicule.",
+        "IsRight": false,
+        "QueryId": 74
+      },
+      {
+        "Id": 242,
+        "Response": " Partea drumului care cuprinde carosabilul (carosabilele), banda (benzile) de separare şi acostamentele acestuia.",
+        "IsRight": true,
+        "QueryId": 74
+      }
+    ]
+  }
 ]

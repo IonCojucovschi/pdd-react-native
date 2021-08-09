@@ -37,6 +37,9 @@ const style = StyleSheet.create({
     ///height:"100%",
     width:"100%",
     fontWeight:"bold",
+    shadowColor: '#635e63',
+    shadowOffset: {width: 0, height: 0},
+    shadowRadius: 7,
   }
 
 })

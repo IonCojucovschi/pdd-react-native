@@ -12,7 +12,10 @@ const style= StyleSheet.create({
         width:70,
         borderRadius:20,
         alignItems:"center",
-        flexDirection:"row",
+        flexDirection:"row",    
+        shadowColor: '#635e63',
+        shadowOffset: {width: 0, height: 0},
+        shadowRadius: 7,
     },
     testItem:{
         height:70,

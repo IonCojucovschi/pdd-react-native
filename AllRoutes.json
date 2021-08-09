@@ -1,0 +1,36 @@
+{
+    "chisinau":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.6",
+            "imageUrl":"R6_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.7",
+            "imageUrl":"R7_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.8",
+            "imageUrl":"R8_Chisinau.jpg"
+        }
+    ]
+}

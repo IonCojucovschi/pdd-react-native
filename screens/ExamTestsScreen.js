@@ -43,7 +43,6 @@ class ExamTestsScreen extends Component{
                   numColumns={4}
                   renderItem={({ item, index }) => (<TestItem key={"testul"+index} navigation={this.props.navigation} item={item}/>)}
               />
-              
             </View>
   }
 

@@ -4,7 +4,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import AllTestTemp  from '../AllTest.json';
 
 import HeaderComponent from '../components/HeaderComponent';
 import HomeItemComponent from '../components/Home/HomeItemComponent';
@@ -31,22 +30,12 @@ class ExamCenters extends Component{
     }
 
    render(){
-/// "ImageUri": "/capitolul1/c2f71d79-16f6-4d68-8ee9-802b0080f17d.png",
-    var allImages=[];
-    AllTestTemp.forEach(el=>{
-      if(el.ImageUri!=null){
-        allImages[el.ImageUri] = 'require("../img'+ el.ImageUri + '")';
-      }
-      
-    }
-    );
-    console.log("ALL IMAGES: ", allImages);
-    
+
        return(
         <View style={style.containerHome}>
                 <HeaderComponent/>
                 <View style={style.optionContainer}>
-                    <HomeItemComponent count={11} name={"Chisinau"}/> 
+                    <HomeItemComponent count={11} navigation={this.props.navigation} pageLink={"ExamCentersRoutes"} name={"Chisinau"}/> 
                     <HomeItemComponent count={11} name={"Balti"}/> 
                     <HomeItemComponent count={11} name={"Cahul"}/> 
                     <HomeItemComponent count={11} name={"Comrat"}/> 

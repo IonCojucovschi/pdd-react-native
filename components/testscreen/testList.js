@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
 const TestList = ({tests, navigation}) => {
 
     const goToSenectedTest=(test)=>{
-      navigation.navigate('Home', { id: test});
+      //navigation.navigate('Home', { id: test});
     }
 
     return <View style={styles.container}>

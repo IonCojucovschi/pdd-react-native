@@ -53,10 +53,16 @@ class ExamCentersRoutes extends Component{
                 <HeaderComponent/>
                 <View style={style.optionContainer}>
                     <FlatList
-                    columnWrapperStyle={{height:"100%", paddingLeft:25, paddingRight:25,width:"100%",justifyContent: 'space-between'}}
+                    columnWrapperStyle={{paddingLeft:25, paddingRight:25,width:"100%", paddingBottom:50, justifyContent: 'space-between'}}
                     data={routesResource.chisinau}
                     numColumns={2}
-                    renderItem={({ item, index }) => (<RouteItem key={"testul"+index} imageUrl={RoutesImage[item.imageUrl]} navigation={this.props.navigation} name={item.name} item={item}/>)}
+                    showsVerticalScrollIndicator ={false}
+                    renderItem={({ item, index }) => (<RouteItem 
+                        key={"testul"+index} 
+                        imageUrl={RoutesImage[item.imageUrl]} 
+                        navigation={this.props.navigation} 
+                        name={item.name} 
+                        item={item}/>)}
                 />
                 </View>
         </View>

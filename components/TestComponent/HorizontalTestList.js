@@ -61,6 +61,7 @@ class  HorizontalTestList extends Component  {
         return <View style={stylesList.container}>
                 <FlatList
                     horizontal={true}
+                    showsHorizontalScrollIndicator={false}
                     keyExtractor={(item1)=>"elm0"+item1.Id}
                     ref={(ref) => { this.flatListRef = ref; }}
                     data={ this.props.allTests }

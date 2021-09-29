@@ -1,5 +1,6 @@
 import React, { Component,useState,useEffect } from "react";
 import { View, Text, StyleSheet, Image, Button, FlatList, TouchableHighlight } from "react-native";
+import ImageModal from 'react-native-image-modal';
 
 
 const style = StyleSheet.create({
@@ -48,18 +49,21 @@ class  RouteItem extends Component  {
     }
 
     goToPage=()=>{
-        //console.log("Pressed : ",this.props);
-        this.props.navigation.navigate(this.props.pageLink, this.props.params);
+        console.log("Image Is selected!!!! ",this.props);
+        ///this.props.navigation.navigate(this.props.pageLink, this.props.params);
     }
 
    render(){ 
         return <TouchableHighlight activeOpacity={0.6}
         underlayColor="#ffffff" style={style.baseItem} onPress={()=>this.goToPage()}>
             <View style={style.containerItem}>
-                <Image
+               
+                <ImageModal
                     style={style.imageStyle}
                     source={this.props.imageUrl}
                 />
+
+
                 <Text style={style.textName}>{this.props.name}</Text>
             </View>            
         </TouchableHighlight> 
@@ -68,6 +72,27 @@ class  RouteItem extends Component  {
 }
 
 export default RouteItem;
+
+
+
+// <Image
+//                     style={style.imageStyle}
+//                     source={this.props.imageUrl}
+//                 />
+
+
+
+// <ImageModal
+// style={style.imageStyle}
+// resizeMode="contain"
+// imageBackgroundColor="#000000"
+// source={{
+//         uri: this.props.imageUrl,
+//     }}
+// />
+
+
+
 
 
 

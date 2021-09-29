@@ -41,8 +41,8 @@ class  HomeItemComponent extends Component  {
     }
 
     goToPage=()=>{
-        //console.log("Pressed : ",this.props);
-        this.props.navigation.navigate(this.props.pageLink, this.props.params);
+        ///console.log("Pressed : ",this.props);
+        this.props.navigation.navigate(this.props.pageLink, this.props);
     }
 
    render(){ 

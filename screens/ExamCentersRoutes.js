@@ -117,7 +117,8 @@ class ExamCentersRoutes extends Component{
         super(props);
     }
     _keyExtractor = (item, index) => "routeItem_" + index.toString();
-    selectedCity = this.props.navigation.state.params.params.name;
+    
+    selectedCity = this.props.navigation.state.params.name;
    render(){
        console.log("Orasul selectat este :",this.selectedCity);
        return(

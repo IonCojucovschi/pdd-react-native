@@ -162,9 +162,4 @@ class SelectedTestScreen extends Component {
           </ScrollView>)
    }      
 }
-///onPress={()=>{}}
-///source={require("../img"+ this.state.test.ImageUri)}
 export default SelectedTestScreen
-
-
-/////source={require("../img"+ this.state.test.ImageUri)}

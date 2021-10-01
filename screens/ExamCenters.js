@@ -1,5 +1,5 @@
 import React, { Component,useState,useEffect } from "react";
-import { Text, StatusBar, Button, StyleSheet, View } from 'react-native';
+import { Text, StatusBar, Button, StyleSheet,ScrollView, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -32,7 +32,7 @@ class ExamCenters extends Component{
    render(){
 
        return(
-        <View style={style.containerHome}>
+        <ScrollView style={style.containerHome}>
                 <HeaderComponent/>
                 <View style={style.optionContainer}>
                     <HomeItemComponent count={8} navigation={this.props.navigation} pageLink={"ExamCentersRoutes"} name={"Chisinau"} params={{name:"chisinau"}}/> 
@@ -48,7 +48,7 @@ class ExamCenters extends Component{
                     <HomeItemComponent count={3} navigation={this.props.navigation} name={"Soroca"} pageLink={"ExamCentersRoutes"} params={{name:"soroca"}}/> 
                     <HomeItemComponent count={5} navigation={this.props.navigation} name={"Ungheni"} pageLink={"ExamCentersRoutes"} params={{name:"ungheni"}}/> 
                 </View>
-        </View>
+        </ScrollView>
        )
    }
 }

@@ -13,6 +13,7 @@ import ExamCenters from "../screens/ExamCenters";
 import ExamCentersRoutes from "../screens/ExamCentersRoutes";
 import ExamTestsScreen from "../screens/ExamTestsScreen";
 import SelectedTestScreen  from "../screens/SelectedTestScreen";
+import PenaltyDetails from "../screens/PenaltyDetails";
 
 /// import navigators
 import NotificationNavigator from './NotificationNavigator';
@@ -135,6 +136,12 @@ const _HomeNaviator = createStackNavigator({
   },
   Utils:{
     screen:Utils,
+    navigationOptions:{
+      headerShown:false
+    }
+  },
+  PenaltyDetails:{
+    screen:PenaltyDetails,
     navigationOptions:{
       headerShown:false
     }

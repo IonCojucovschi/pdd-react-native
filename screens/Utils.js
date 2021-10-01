@@ -36,7 +36,7 @@ class Utils extends Component{
                 <HeaderComponent/>
                 <View style={style.optionContainer}>
                     <HomeItemComponent navigation={this.props.navigation} pageLink={"ExamCenters"} count={11} name={"Rute de examinare"}/> 
-                    <HomeItemComponent count={23} name={"Amenzi"}/> 
+                    <HomeItemComponent navigation={this.props.navigation} pageLink={"PenaltyDetails"} count={23} name={"Amenzi"}/> 
                 </View>
         </View>
        )

@@ -59,6 +59,7 @@ class  RouteItem extends Component  {
             <View style={style.containerItem}>
                
                 <ImageModal
+                    resizeMode="center"
                     style={style.imageStyle}
                     source={this.props.imageUrl}
                 />

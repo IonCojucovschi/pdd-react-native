@@ -36,7 +36,7 @@ class  HorizontalTestList extends Component  {
     constructor(props){
         super(props);
         this.state={currentTest:null};
-        console.log("Tests: ",this.props);
+        //console.log("Tests: ",this.props);
     }
     ///console.log("All Tests: ",state);
 
@@ -44,7 +44,7 @@ class  HorizontalTestList extends Component  {
       //navigation.navigate('Home', { id: test});
       this.props.onTestSelecting(test);
       let curentTest=this.props.allTests.findIndex((el)=>el.Id==test);
-      console.log("Selected test is ", curentTest);
+      //console.log("Selected test is ", curentTest);
 
       if(curentTest>0){
           this.setState({currentTest:curentTest});
@@ -56,6 +56,23 @@ class  HorizontalTestList extends Component  {
         
         this.flatListRef.scrollToIndex({animated: true, index: "" + index});
       }
+
+    componentDidUpdate(){
+      console.log("this.props.curentRespondedTest : ",this.props.curentRespondedTest);
+      if(this.props.curentRespondedTest)
+      {
+        this.goToNextTest(this.props.curentRespondedTest.Id);
+      }
+    }
+
+    goToNextTest=(test)=>{
+      //this.props.onTestSelecting(test);
+      let curentTest=this.props.allTests.findIndex((el)=>el.Id==test);
+
+      if(curentTest>0){
+          this.scrollToItem(curentTest);
+      }
+    }
 
    render(){ 
         return <View style={stylesList.container}>

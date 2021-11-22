@@ -49,7 +49,7 @@ class  RouteItem extends Component  {
     }
 
     goToPage=()=>{
-        console.log("Image Is selected!!!! ",this.props);
+        //console.log("Image Is selected!!!! ",this.props);
         ///this.props.navigation.navigate(this.props.pageLink, this.props.params);
     }
 
@@ -58,12 +58,12 @@ class  RouteItem extends Component  {
         underlayColor="#ffffff" style={style.baseItem} onPress={()=>this.goToPage()}>
             <View style={style.containerItem}>
                
-                <ImageModal
-                    resizeMode="center"
-                    style={style.imageStyle}
-                    source={this.props.imageUrl}
-                />
 
+
+                <Image
+                     style={style.imageStyle}
+                     source={this.props.imageUrl}
+                 />
 
                 <Text style={style.textName}>{this.props.name}</Text>
             </View>            
@@ -74,7 +74,11 @@ class  RouteItem extends Component  {
 
 export default RouteItem;
 
-
+// <ImageModal
+// resizeMode="center"
+// style={style.imageStyle}
+// source={this.props.imageUrl}
+// />
 
 // <Image
 //                     style={style.imageStyle}
@@ -82,15 +86,6 @@ export default RouteItem;
 //                 />
 
 
-
-// <ImageModal
-// style={style.imageStyle}
-// resizeMode="contain"
-// imageBackgroundColor="#000000"
-// source={{
-//         uri: this.props.imageUrl,
-//     }}
-// />
 
 
 

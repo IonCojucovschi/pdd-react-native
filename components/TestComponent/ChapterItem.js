@@ -1,5 +1,5 @@
 import React, { Component,useState,useEffect } from "react";
-import { View, Text, StyleSheet, Image, Button, FlatList, TouchableHighlight } from "react-native";
+import {Animated, View, Text, StyleSheet, Image, Button, FlatList, TouchableHighlight } from "react-native";
 
 import {TestContainer} from "../../services/repositoryService";
 const style = StyleSheet.create({
@@ -30,7 +30,7 @@ const style = StyleSheet.create({
     fontSize:18,
     color:"#AEEB7E",
     borderColor:"#AEEB7E",
-    borderRadius:20,
+    borderRadius:15,
     borderWidth:1,
   },
   ItemDescription:{
@@ -58,7 +58,7 @@ class  ChapterItemComponent extends Component  {
             fontSize:18,
             color:"#AEEB7E",
             borderColor:"#AEEB7E",
-            borderRadius:20,
+            borderRadius:15,
             borderWidth:1,
             transform: [{ rotate: "0deg" }]
           }
@@ -119,7 +119,7 @@ class  ChapterItemComponent extends Component  {
                   <View style={style.container}>
                         <Text style={style.ItemDescription}>{this.props.name}</Text>
                         <View>
-                          <Text style={this.state.elementsCounter}>{">"}</Text>
+                          <Animated.Text style={this.state.elementsCounter}>{">"}</Animated.Text>
                         </View> 
                     </View>
               </TouchableHighlight>

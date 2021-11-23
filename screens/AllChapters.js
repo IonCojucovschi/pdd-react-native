@@ -44,6 +44,7 @@ class AllChaptersScreen extends Component{
                   columnWrapperStyle={{ marginLeft:25, marginRight:25, justifyContent: 'space-between'}}
                   data={testContainer.GetAllThemes()}
                   numColumns={4}
+                  keyExtractor={(item, index) => "allchapters"+index.toString()}
                   renderItem={({ item, index }) => (<TestItem key={"testul"+index} navigation={this.props.navigation} item={item}/>)}
               />
             </View>

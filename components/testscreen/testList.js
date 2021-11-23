@@ -110,6 +110,7 @@ const TestList = ({tests, navigation}) => {
     <FlatList
         data={testElements}
         style={{backgroundColor:"#dedede"}}
+        keyExtractor={(item, index) => "testList"+index.toString()}
         numColumns={3}
         renderItem={({ item }) => (<TouchableHighlight onPress={goToSenectedTest(item.id)}>
               <View style={styles.itemList}>

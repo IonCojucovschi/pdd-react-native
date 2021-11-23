@@ -39,9 +39,8 @@ class ExamTestsScreen extends Component{
               <View style={{marginTop:20,width:"100%"}}/>
               <FlatList
                   data={testContainer.Chapters()}
-                  style={{
-                    paddingLeft:25,
-                    paddingRight:25}}
+                  style={{ paddingLeft:25, paddingRight:25}}
+                  keyExtractor={(item, index) => "chapter"+index.toString()}
                   numColumns={1}
                   renderItem={({ item, index }) => (<ChapterItemComponent 
                                                       key={"testul"+index}

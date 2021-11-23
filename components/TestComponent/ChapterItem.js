@@ -100,7 +100,7 @@ class  ChapterItemComponent extends Component  {
                       justifyContent: "space-between",
                     }}>
                   <Text style = {{width:'80%'}}>{elm.Tema}</Text>
-                  <TouchableHighlight onPress = {()=>this.goToPage(elm)}>
+                  <TouchableHighlight underlayColor="#ffffff" onPress = {()=>this.goToPage(elm)}>
                     <Text style={style.elementsCounter}>{">"}</Text>
                   </TouchableHighlight>
               </View>

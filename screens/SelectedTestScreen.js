@@ -1,5 +1,5 @@
 import React, { Component,useState,useEffect } from "react";
-import { AppRegistry, View, Text, StyleSheet,ScrollView , Image, Button, FlatList, TouchableHighlight } from "react-native";
+import { AppRegistry, View, Text, StyleSheet,ScrollView , Image, Dimensions, FlatList, TouchableHighlight } from "react-native";
 import testResources from "../components/testscreen/testList.json";
 import AllTests from "../AllTest.json";
 import HorizontalTestList from '../components/TestComponent/HorizontalTestList';
@@ -22,6 +22,7 @@ const style = StyleSheet.create({
   testContainer:{
     height:"100%",
     width:"100%",
+    position:"relative",
     paddingBottom:15,
     backgroundColor:"#eeeeee",
   },
@@ -58,14 +59,26 @@ class SelectedTestScreen extends Component {
 
 
     }
+    windowWidth = Dimensions.get('window').width-80;
+    windowHeight = Dimensions.get('window').height-80;
 
     onTestSelecting=(test)=>{
-
-      //console.log("Test selected: ",test);
       let tempState=this.state;
       let selectedTest = this.state.allTests.find(elm=>elm.Id==test);
       tempState.test = selectedTest ? selectedTest:{ Responses:[]};
       this.setState(tempState);
+    }
+
+    nextTestSelecting=()=>{
+      let tempState=this.state;
+      ///console.log("Next Text :", tempState)
+      var currentTestKey = this.state.allTests.map(ix=>ix.Id).indexOf(tempState.test.Id)
+      ///console.log("Curent Key :",currentTestKey);
+      var nextTest = this.state.allTests[currentTestKey+1]
+      if(nextTest){
+        tempState.test = nextTest;
+        this.setState(tempState);
+      }
     }
 
     responseClick=(rs)=>{
@@ -96,8 +109,6 @@ class SelectedTestScreen extends Component {
       if(rs.IsRight)
         tempTest.test = nextTest ? nextTest :{ Responses:[]};
       
-      //console.log("Rs clicked1 :",tempTest);
-      ///set next test background color 
       if(!tempTest.test.backgroundColor)
         tempTest.test.backgroundColor="#75ebd7";
       
@@ -120,8 +131,10 @@ class SelectedTestScreen extends Component {
       return comment;
     }
 
+
    render(){
-    return (<ScrollView  style={style.testContainer}>
+    return (<View style={{position:"relative"}}>
+            <ScrollView  style={style.testContainer}>
               <HeaderComponent/>
               <View style={{ marginRight:20, marginLeft:20, marginTop:15}}>
                  <HorizontalTestList allTests={this.state.allTests} onTestSelecting={this.onTestSelecting} curentRespondedTest={this.state.test}/>
@@ -134,13 +147,12 @@ class SelectedTestScreen extends Component {
               </View>
               <View style={{ marginRight:23, marginLeft:23, marginTop:10}}>
                 {this.state.test.ImageUri ?
-                  <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center"}}
+                  <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center", resizeMode:"cover"}}
                   source={AllImages[this.state.test.ImageUri]}
                   //source={require("../img/capitolul1/3248c020-5840-47da-a8c7-4ce70433c4b6.png")}
                   />:null
                 }
               </View>
-            
               <View style={{
                  width:"100%",
                  paddingLeft:20,
@@ -157,7 +169,29 @@ class SelectedTestScreen extends Component {
                   )}
               </View>
               {this.renderComment()}
-          </ScrollView>)
+            </ScrollView>
+              {(this.state.test.backgroundColor && this.state.test.backgroundColor != "#75ebd7") ? 
+                  <View style={{
+                    height:60,
+                    width:60,
+                    borderRadius:30,
+                    position:"absolute",
+                    zIndex:10,
+                    elevation:10,
+                    marginLeft:this.windowWidth,
+                    marginTop:this.windowHeight,
+                    
+                    textAlign:"center",
+                    alignContent:"center",
+                    backgroundColor:"#06c20f"
+                  }}>
+                    <TouchableHighlight underlayColor="#A1F4A3" style={{ height:60, width:60, borderRadius:30,}} onPress={()=>this.nextTestSelecting()}>
+                      <Text style={{fontSize:30, textAlign:"center",marginLeft:9, marginTop:9, color:"#cdcdcd"}}>{">"}</Text>
+                    </TouchableHighlight>
+                  </View>
+              : null
+              }
+          </View>)
    }      
 }
 export default SelectedTestScreen

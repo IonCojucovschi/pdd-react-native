@@ -57,14 +57,11 @@ class  RouteItem extends Component  {
         return <TouchableHighlight activeOpacity={0.6}
         underlayColor="#ffffff" style={style.baseItem} onPress={()=>this.goToPage()}>
             <View style={style.containerItem}>
-               
-
-
-                <Image
-                     style={style.imageStyle}
-                     source={this.props.imageUrl}
-                 />
-
+                <ImageModal
+                    resizeMode="center"
+                    style={style.imageStyle}
+                    source={this.props.imageUrl}
+                    />
                 <Text style={style.textName}>{this.props.name}</Text>
             </View>            
         </TouchableHighlight> 
@@ -74,11 +71,7 @@ class  RouteItem extends Component  {
 
 export default RouteItem;
 
-// <ImageModal
-// resizeMode="center"
-// style={style.imageStyle}
-// source={this.props.imageUrl}
-// />
+
 
 // <Image
 //                     style={style.imageStyle}

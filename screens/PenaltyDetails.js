@@ -1,14 +1,19 @@
 import React, { Component,useState,useEffect } from "react";
-import { Text, StatusBar, Button, StyleSheet, View } from 'react-native';
+import {ScrollView, Text, StatusBar, Button, StyleSheet, View, TouchableHighlight } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-//import RenderHtml from 'react-native-render-html';
+import { createBottomTabNavigator } from "react-navigation-tabs";
 
 
 import HeaderComponent from '../components/HeaderComponent';
 import HomeItemComponent from '../components/Home/HomeItemComponent';
-//import { penaltyHtmlResource } from "../html_resources/penaltyHtmlResource";
+import HeaderPenaltiesComponent from '../components/Penalty/HeaderPenalties';
+import PenaltyRow from '../components/Penalty/PenaltyRow';
+import PenaltyRowWithPoints from '../components/Penalty/PenaltyRowWithPoints';
+import PenaltyWthoutPoints from "../PenaltiesCART.json";
+import PenaltyWithPoints from "../PenaltiesCDCR.json";
+import { set } from "react-native-reanimated";
 
 const style = StyleSheet.create({
   containerHome:{
@@ -25,28 +30,58 @@ const style = StyleSheet.create({
   },
 
 });
-const source = {
-    html: "<h1>HEY </h1>"//penaltyHtmlResource
-  };
+//const Tab = createBottomTabNavigator()
 
 class PenaltyDetails extends Component{
     constructor(props)
     {
-        super(props);
+        super(props)
+        this.state ={showPenaltiesWithMoney:true}
+    }
+
+    onClickButton = (penaltyState)=>{
+      this.setState({showPenaltiesWithMoney:penaltyState})
+    }
+
+    showPenaltiesWithMoney(){
+        var penaltyList = PenaltyWthoutPoints.map((elm,index)=><PenaltyRow key={"pen_row"+index} source={elm}/>)
+        return penaltyList;
+    }
+    
+    showPenaltiesWithPoints(){
+        var penaltyList1 = PenaltyWithPoints.map((elm,index)=><PenaltyRowWithPoints key={"pen_row_points"+index} source={elm}/>)
+        return penaltyList1;
     }
 
    render(){
        return(
         <View style={style.containerHome}>
+          <ScrollView>
                 <HeaderComponent/>
-      
-        </View>
-       )
+                <HeaderPenaltiesComponent/>
+                <View style={{display:"flex",flexDirection:"row", justifyContent:"space-between" }}>
+                  <TouchableHighlight underlayColor="#A1F4A3" onPress={()=> this.onClickButton(true)}
+                    style={{width:"48%", padding:5, backgroundColor:"#A0EAA2", borderRadius:8,borderBottomColor:"#000"}}
+                  >
+                    <Text style={{textAlign:"center"}}>Сontravenţii ce atentează la regimul din transporturi</Text>
+                  </TouchableHighlight>
+                  <TouchableHighlight underlayColor="#A1F4A3" onPress={()=> this.onClickButton(false)}
+                    style={{width:"48%", padding:5, backgroundColor:"#dedede", borderRadius:8,borderBottomColor:"#000"}}
+                  >
+                    <Text style={{textAlign:"center"}}>Сontravenţii în domeniul circulaţiei rutiere</Text>
+                  </TouchableHighlight>
+                </View>
+                {this.state.showPenaltiesWithMoney ?
+                  <PenaltyRow key={"pen_rowHead"} isHeader={true} source={{article:"Art.",contravention:"Contraventii", value:"Amenda"}}/>
+                  :<PenaltyRowWithPoints key={"pen_rowHead"} isHeader={true} source={{article:"Art.",contravention:"Contraventii", value:"Amenda", penaltyPoint:"Pun."}}/>
+                }
+
+                {this.state.showPenaltiesWithMoney ? 
+                    this.showPenaltiesWithMoney()
+                    :this.showPenaltiesWithPoints()
+                }
+          </ScrollView>
+        </View>)
    }
 }
-///style = {style.optionContainer}
 export default PenaltyDetails;
-
-// <RenderHtml 
-// source = {source}
-// />

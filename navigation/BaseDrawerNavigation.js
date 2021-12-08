@@ -112,8 +112,6 @@ const _MessagesNaviator = createStackNavigator({
 // )
 
 
-
-
 const _HomeNaviator = createStackNavigator({
   Home:{
     screen:HomeScreen,

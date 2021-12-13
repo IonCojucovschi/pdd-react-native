@@ -40,11 +40,13 @@ export default function HomeScreen({ navigation }) {
         <HeaderComponent/>
         <View style={style.optionContainer}>
           <HomeItemComponent navigation={navigation} pageLink={"Tests"} count={20} name={"Categoria AB"}/> 
-          <HomeItemComponent count={11} name={"Categoria C"}/> 
-          <HomeItemComponent count={8} name={"Categoria D"}/> 
+
           <HomeItemComponent navigation={navigation} pageLink={"Utils"} count={2} name={"Utile"}/> 
-          <HomeItemComponent count={50} name={"Statistica"}/> 
         </View>
     </View>
   );
 }
+
+{/* <HomeItemComponent count={11} name={"Categoria C"}/> 
+<HomeItemComponent count={8} name={"Categoria D"}/>
+<HomeItemComponent count={50} name={"Statistica"}/>  */}

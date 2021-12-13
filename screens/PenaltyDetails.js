@@ -36,11 +36,66 @@ class PenaltyDetails extends Component{
     constructor(props)
     {
         super(props)
-        this.state ={showPenaltiesWithMoney:true}
+        this.state ={
+          CART:{
+            width:"48%",
+            padding:5, 
+            backgroundColor:"#A0EAA2", 
+            borderRadius:8,
+            borderBottomColor:"#000"
+
+          },
+          CDCR:{
+            width:"48%", 
+            padding:5, 
+            backgroundColor:"#dedede", 
+            borderRadius:8,
+            borderBottomColor:"#000"
+          },
+          showPenaltiesWithMoney:true
+        }
     }
 
     onClickButton = (penaltyState)=>{
-      this.setState({showPenaltiesWithMoney:penaltyState})
+      var tempCDCR = this.state.CDCR;
+      var tempCART = this.state.CART;
+      var newState={};
+      if(penaltyState)
+      {
+        newState.CART={
+          width:"48%",
+          padding:5, 
+          backgroundColor:"#A0EAA2", 
+          borderRadius:8,
+          borderBottomColor:"#000"
+        }
+        newState.CDCR={
+          width:"48%", 
+          padding:5, 
+          backgroundColor:"#dedede", 
+          borderRadius:8,
+          borderBottomColor:"#000"
+        }
+
+      }
+      else{
+        newState.CDCR={
+          width:"48%",
+          padding:5, 
+          backgroundColor:"#A0EAA2", 
+          borderRadius:8,
+          borderBottomColor:"#000"
+        }
+        newState.CART={
+          width:"48%", 
+          padding:5, 
+          backgroundColor:"#dedede", 
+          borderRadius:8,
+          borderBottomColor:"#000"
+        }
+      }
+      newState.showPenaltiesWithMoney = penaltyState;
+      this.setState(newState)
     }
 
     showPenaltiesWithMoney(){
@@ -61,12 +116,12 @@ class PenaltyDetails extends Component{
                 <HeaderPenaltiesComponent/>
                 <View style={{display:"flex",flexDirection:"row", justifyContent:"space-between" }}>
                   <TouchableHighlight underlayColor="#A1F4A3" onPress={()=> this.onClickButton(true)}
-                    style={{width:"48%", padding:5, backgroundColor:"#A0EAA2", borderRadius:8,borderBottomColor:"#000"}}
+                    style={this.state.CART}
                   >
                     <Text style={{textAlign:"center"}}>Сontravenţii ce atentează la regimul din transporturi</Text>
                   </TouchableHighlight>
                   <TouchableHighlight underlayColor="#A1F4A3" onPress={()=> this.onClickButton(false)}
-                    style={{width:"48%", padding:5, backgroundColor:"#dedede", borderRadius:8,borderBottomColor:"#000"}}
+                    style={this.state.CDCR}
                   >
                     <Text style={{textAlign:"center"}}>Сontravenţii în domeniul circulaţiei rutiere</Text>
                   </TouchableHighlight>

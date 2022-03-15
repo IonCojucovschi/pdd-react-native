@@ -123,7 +123,9 @@ class SelectedTestScreen extends Component {
 
 
    render(){
-    return (<View style={{position:"relative"}}>
+     console.log("this.state.test.ImageUri:",this.state.test.ImageUri);
+
+      return (<View style={{position:"relative"}}>
             <ScrollView  style={style.testContainer}>
               <HeaderComponent/>
               <View style={{ marginRight:20, marginLeft:20, marginTop:15}}>
@@ -138,7 +140,7 @@ class SelectedTestScreen extends Component {
               <View style={{ marginRight:23, marginLeft:23, marginTop:10}}>
                 {this.state.test.ImageUri ?
                   <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center", resizeMode:"cover"}}
-                  source={AllImages[this.state.test.ImageUri]}
+                  source={AllImages[this.state.test.ImageUri.replace(" ","")]}
                   //source={require("../img/capitolul1/3248c020-5840-47da-a8c7-4ce70433c4b6.png")}
                   />:null
                 }

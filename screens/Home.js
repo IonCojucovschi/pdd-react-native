@@ -1,8 +1,5 @@
 import * as React from 'react';
 import { Text, StatusBar, Button, StyleSheet, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import AllTestTemp  from '../AllTest.json';
 
@@ -35,7 +32,7 @@ export default function HomeScreen({ navigation }) {
     
   }
   );
-  console.log("ALL IMAGES: ", allImages);
+  //console.log("ALL IMAGES: ", allImages);
   
   return (
     <View style={style.containerHome}>
@@ -43,12 +40,13 @@ export default function HomeScreen({ navigation }) {
         <HeaderComponent/>
         <View style={style.optionContainer}>
           <HomeItemComponent navigation={navigation} pageLink={"Tests"} count={20} name={"Categoria AB"}/> 
-          <HomeItemComponent count={11} name={"Categoria C"}/> 
-          <HomeItemComponent count={8} name={"Categoria D"}/> 
-          <HomeItemComponent navigation={navigation} pageLink={"Utils"} count={2} name={"Utile"}/> 
-          <HomeItemComponent count={50} name={"Statistica"}/> 
 
+          <HomeItemComponent navigation={navigation} pageLink={"Utils"} count={2} name={"Utile"}/> 
         </View>
     </View>
   );
 }
+
+{/* <HomeItemComponent count={11} name={"Categoria C"}/> 
+<HomeItemComponent count={8} name={"Categoria D"}/>
+<HomeItemComponent count={50} name={"Statistica"}/>  */}

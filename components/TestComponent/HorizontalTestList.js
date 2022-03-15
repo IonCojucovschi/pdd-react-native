@@ -17,6 +17,8 @@ const stylesList = StyleSheet.create({
       textAlign:"center",
       alignSelf:"center",
       fontWeight:"bold",
+      width:"100%",
+      height:"100%"
       //backgroundColor:"#d1c541"
     },
     itemList:{
@@ -36,7 +38,7 @@ class  HorizontalTestList extends Component  {
     constructor(props){
         super(props);
         this.state={currentTest:null};
-        console.log("Tests: ",this.props);
+        //console.log("Tests: ",this.props);
     }
     ///console.log("All Tests: ",state);
 
@@ -44,7 +46,7 @@ class  HorizontalTestList extends Component  {
       //navigation.navigate('Home', { id: test});
       this.props.onTestSelecting(test);
       let curentTest=this.props.allTests.findIndex((el)=>el.Id==test);
-      console.log("Selected test is ", curentTest);
+      //console.log("Selected test is ", curentTest);
 
       if(curentTest>0){
           this.setState({currentTest:curentTest});
@@ -57,21 +59,40 @@ class  HorizontalTestList extends Component  {
         this.flatListRef.scrollToIndex({animated: true, index: "" + index});
       }
 
+    componentDidUpdate(){
+      console.log("this.props.curentRespondedTest : ",this.props.curentRespondedTest);
+      if(this.props.curentRespondedTest)
+      {
+        this.goToNextTest(this.props.curentRespondedTest.Id);
+      }
+    }
+
+    goToNextTest=(test)=>{
+      //this.props.onTestSelecting(test);
+      let curentTest=this.props.allTests.findIndex((el)=>el.Id==test);
+
+      if(curentTest>0){
+          this.scrollToItem(curentTest);
+      }
+    }
+
    render(){ 
         return <View style={stylesList.container}>
                 <FlatList
                     horizontal={true}
+                    showsHorizontalScrollIndicator={false}
                     keyExtractor={(item1)=>"elm0"+item1.Id}
                     ref={(ref) => { this.flatListRef = ref; }}
                     data={ this.props.allTests }
                     style={{backgroundColor:"#eee"}}
                     renderItem={({ item, index }) => (<TouchableHighlight 
-                    style={
+                      underlayColor="#ffffff" 
+                      style={
                         {
                         color:'#cdcdcd',
                         backgroundColor: (item.backgroundColor ? item.backgroundColor :'#ddd'),///'#06ba1e',
                         padding:5,
-                        width:55,
+                        width:60,
                         height:48,
                         alignItems:"center",
                         flex:1,
@@ -81,9 +102,7 @@ class  HorizontalTestList extends Component  {
                         }
                     } 
                     onPress={()=>this.goToSenectedTest(item.Id)}>
-                        <View>
-                          <Text style={stylesList.textStyle}>{"Test \n" + index }</Text>
-                        </View>
+                            <Text style={stylesList.textStyle}>{"Biletul \n" + (index+1) }</Text>
                         </TouchableHighlight>)}
                     />
             </View>

@@ -1,27 +1,18 @@
 import React, { Component,useState,useEffect } from "react";
-import { AppRegistry, View, Text, StyleSheet,ScrollView , Image, Button, FlatList, TouchableHighlight } from "react-native";
+import { AppRegistry, View, Text, StyleSheet,ScrollView , Image, Dimensions, FlatList, TouchableHighlight } from "react-native";
 import testResources from "../components/testscreen/testList.json";
 import AllTests from "../AllTest.json";
 import HorizontalTestList from '../components/TestComponent/HorizontalTestList';
 import HeaderComponent from '../components/HeaderComponent';
 import AnswerItem from '../components/TestComponent/AnswerItem';
 
-//import {AllImages} from '../allImages';
-
-const AllImages = {
-
-  "/capitolul1/a0c358ff-ba19-4f16-8ff8-3f2857bdbfb7.jpg": require("../img/capitolul1/a0c358ff-ba19-4f16-8ff8-3f2857bdbfb7.jpg"),
-  "/capitolul1/b6d9915b-adb9-4218-a912-436e5a9d26cb.png": require("../img/capitolul1/b6d9915b-adb9-4218-a912-436e5a9d26cb.png"),
-  "/capitolul1/c2f71d79-16f6-4d68-8ee9-802b0080f17d.png": require("../img/capitolul1/c2f71d79-16f6-4d68-8ee9-802b0080f17d.png"),
-  "/capitolul1/e8e87b13-fcf1-4e4a-a579-b2c90473f88e.jpg": require("../img/capitolul1/e8e87b13-fcf1-4e4a-a579-b2c90473f88e.jpg"),
-  "/capitolul1/ec589181-2a66-48c5-b154-6f6a662e92cf.png": require("../img/capitolul1/ec589181-2a66-48c5-b154-6f6a662e92cf.png"),
-  "/capitolul1/edf4582e-d13e-4c91-ab23-410091d66829.png": require("../img/capitolul1/edf4582e-d13e-4c91-ab23-410091d66829.png")
-};
+import {AllImages } from '../allImages';
 
 const style = StyleSheet.create({
   testContainer:{
     height:"100%",
     width:"100%",
+    position:"relative",
     paddingBottom:15,
     backgroundColor:"#eeeeee",
   },
@@ -37,6 +28,9 @@ const style = StyleSheet.create({
     ///height:"100%",
     width:"100%",
     fontWeight:"bold",
+    shadowColor: '#635e63',
+    shadowOffset: {width: 0, height: 0},
+    shadowRadius: 7,
   }
 
 })
@@ -46,8 +40,6 @@ class SelectedTestScreen extends Component {
     constructor(props){
       super(props);
       let selectedTest=this.props.navigation.getParam("chapter");
-      
-      console.log(" Selected Test Value: ",selectedTest);
 
       let allTest = AllTests.filter(elm=>elm.Thema==selectedTest.Tema); 
 
@@ -57,14 +49,26 @@ class SelectedTestScreen extends Component {
 
 
     }
+    windowWidth = Dimensions.get('window').width-80;
+    windowHeight = Dimensions.get('window').height-80;
 
     onTestSelecting=(test)=>{
-
-      console.log("Test selected: ",test);
       let tempState=this.state;
       let selectedTest = this.state.allTests.find(elm=>elm.Id==test);
       tempState.test = selectedTest ? selectedTest:{ Responses:[]};
       this.setState(tempState);
+    }
+
+    nextTestSelecting=()=>{
+      let tempState=this.state;
+      ///console.log("Next Text :", tempState)
+      var currentTestKey = this.state.allTests.map(ix=>ix.Id).indexOf(tempState.test.Id)
+      ///console.log("Curent Key :",currentTestKey);
+      var nextTest = this.state.allTests[currentTestKey+1]
+      if(nextTest){
+        tempState.test = nextTest;
+        this.setState(tempState);
+      }
     }
 
     responseClick=(rs)=>{
@@ -95,8 +99,6 @@ class SelectedTestScreen extends Component {
       if(rs.IsRight)
         tempTest.test = nextTest ? nextTest :{ Responses:[]};
       
-      console.log("Rs clicked1 :",tempTest);
-      ///set next test background color 
       if(!tempTest.test.backgroundColor)
         tempTest.test.backgroundColor="#75ebd7";
       
@@ -105,7 +107,7 @@ class SelectedTestScreen extends Component {
 
     renderComment=()=>{
 
-      console.log("this.state.test.backgroundColor",this.state.test.backgroundColor);
+      ///console.log("this.state.test.backgroundColor",this.state.test.backgroundColor);
     
       var comment = (this.state.test.backgroundColor && this.state.test.backgroundColor != "#75ebd7") ? (<View style={style.comentStyle}>
         <Text style={{ fontSize:15, fontWeight:"bold", marginBottom:10,}}>
@@ -119,11 +121,13 @@ class SelectedTestScreen extends Component {
       return comment;
     }
 
+
    render(){
-    return (<ScrollView  style={style.testContainer}>
+      return (<View style={{position:"relative"}}>
+            <ScrollView  style={style.testContainer}>
               <HeaderComponent/>
               <View style={{ marginRight:20, marginLeft:20, marginTop:15}}>
-                 <HorizontalTestList allTests={this.state.allTests} onTestSelecting={this.onTestSelecting} />
+                 <HorizontalTestList allTests={this.state.allTests} onTestSelecting={this.onTestSelecting} curentRespondedTest={this.state.test}/>
               </View>
               <View style={{ marginRight:5, marginLeft:23 }}>
                 <Text
@@ -133,13 +137,11 @@ class SelectedTestScreen extends Component {
               </View>
               <View style={{ marginRight:23, marginLeft:23, marginTop:10}}>
                 {this.state.test.ImageUri ?
-                  <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center"}}
-                  source={AllImages[this.state.test.ImageUri]}
-                  //source={require("../img/capitolul1/3248c020-5840-47da-a8c7-4ce70433c4b6.png")}
+                  <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center", resizeMode:"cover"}}
+                  source={AllImages[this.state.test.ImageUri.replace(" ","")]}
                   />:null
                 }
               </View>
-            
               <View style={{
                  width:"100%",
                  paddingLeft:20,
@@ -156,12 +158,29 @@ class SelectedTestScreen extends Component {
                   )}
               </View>
               {this.renderComment()}
-          </ScrollView>)
+            </ScrollView>
+              {(this.state.test.backgroundColor && this.state.test.backgroundColor != "#75ebd7") ? 
+                  <View style={{
+                    height:60,
+                    width:60,
+                    borderRadius:30,
+                    position:"absolute",
+                    zIndex:10,
+                    elevation:10,
+                    marginLeft:this.windowWidth,
+                    marginTop:this.windowHeight,
+                    
+                    textAlign:"center",
+                    alignContent:"center",
+                    backgroundColor:"#06c20f"
+                  }}>
+                    <TouchableHighlight underlayColor="#A1F4A3" style={{ height:60, width:60, borderRadius:30,}} onPress={()=>this.nextTestSelecting()}>
+                      <Text style={{fontSize:30, textAlign:"center",marginLeft:9, marginTop:9, color:"#cdcdcd"}}>{">"}</Text>
+                    </TouchableHighlight>
+                  </View>
+              : null
+              }
+          </View>)
    }      
 }
-///onPress={()=>{}}
-///source={require("../img"+ this.state.test.ImageUri)}
 export default SelectedTestScreen
-
-
-/////source={require("../img"+ this.state.test.ImageUri)}

@@ -10,8 +10,10 @@ import HomeScreen from '../screens/Home.js'
 import MessagesScreen from "../screens/MessagesScreen";
 import Utils from "../screens/Utils";
 import ExamCenters from "../screens/ExamCenters";
+import ExamCentersRoutes from "../screens/ExamCentersRoutes";
 import ExamTestsScreen from "../screens/ExamTestsScreen";
 import SelectedTestScreen  from "../screens/SelectedTestScreen";
+import PenaltyDetails from "../screens/PenaltyDetails";
 
 /// import navigators
 import NotificationNavigator from './NotificationNavigator';
@@ -110,8 +112,6 @@ const _MessagesNaviator = createStackNavigator({
 // )
 
 
-
-
 const _HomeNaviator = createStackNavigator({
   Home:{
     screen:HomeScreen,
@@ -138,8 +138,20 @@ const _HomeNaviator = createStackNavigator({
       headerShown:false
     }
   },
+  PenaltyDetails:{
+    screen:PenaltyDetails,
+    navigationOptions:{
+      headerShown:false
+    }
+  },
   ExamCenters:{
     screen:ExamCenters,
+    navigationOptions:{
+      headerShown:false,
+    }
+  },
+  ExamCentersRoutes:{
+    screen:ExamCentersRoutes,
     navigationOptions:{
       headerShown:false,
     }

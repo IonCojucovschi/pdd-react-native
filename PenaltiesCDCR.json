@@ -1,0 +1,239 @@
+[
+    {
+        "article":"228.1",
+        "contravention":"Exploatarea vehiculelor cu defecte tehnice în sistemul de frînare sau în mecanismul de direcţie, în dispozitivele de iluminare ori de semnalizare, exploatarea vehiculelor reutilate fără autorizaţia de rigoare ",
+        "value":"15-20 y.e. (750-1000 lei)",
+        "penaltyPoint":3
+    },
+    {
+        "article":"228.2",
+        "contravention":"Exploatarea vehiculelor cu defecte tehnice interzisă prin regulile de circulaţie rutieră, cu excepţia vehiculelor avînd defectele menţionate la alin.(1), precum şi amplasarea neautorizată pe vehicule a publicităţii",
+        "value":"5-10 y.e. (250-500 lei)"
+    },
+    {
+        "article":"229.1",
+        "contravention":"Încălcarea regulilor de înmatriculare sau de înregistrare de stat a vehiculelor",
+        "value":"10-20 y.e. (500-1000 lei)"
+    },
+    {
+        "article":"229.2",
+        "contravention":"Conducerea unui vehicul care nu a fost înmatriculat în modul stabilit sau care nu a fost supus reviziei tehnice",
+        "value":"15-20 y.e. (750-1000 lei)",
+        "penaltyPoint":3
+    },
+    {
+        "article":"229.3",
+        "contravention":"Exploatarea unui vehicul care nu a fost asigurat de răspundere civilă în modul stabilit",
+        "value":"5-10 y.e. (250-500 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"230.1",
+        "contravention":"Conducerea unui vehicul cu numărul de înmatriculare indescifrabil, nestandardizat sau amplasat cu încălcarea standardului",
+        "value":"5-10 y.e. (250-500 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"230.2",
+        "contravention":"Conducerea unui vehicul fără număr de înmatriculare",
+        "value":"25-30 y.e. (1250-1500 lei)",
+        "penaltyPoint":4
+    },
+    {
+        "article":"230.3",
+        "contravention":"Atribuirea unui număr de înmatriculare fals şi conducerea cu bună ştiinţă a vehiculului cu un astfel de număr",
+        "value":"privarea de dreptul de a conduce un vehicul pe un termen de un an"
+    },
+    {
+        "article":"230.4",
+        "contravention":"Nesemnalizarea vehiculului cu semnul distinctiv conform Regulamentului circulaţiei rutiere",
+        "value":"5-20 y.e. (250-1000 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"230.5",
+        "contravention":"Nemenţinerea în stare curată a dispozitivelor de iluminare, de semnalizare, a numărului de înmatriculare, a seturilor reflectorizante, a sticlelor de la portierele din faţă şi a parbrizului vehiculului ",
+        "value":"avertisment sau cu amendă de la o unitate la 3 unităţi convenţionale"
+    },
+    {
+        "article":"231.1",
+        "contravention":"Conducerea vehiculului cu permis de conducere de o categorie necorespunzătoare",
+        "value":"50 y.e. (2500 lei)"
+    },
+    {
+        "article":"231.2",
+        "contravention":"Conducerea vehiculului fără permis de conducere (cu excepţia conducerii în cazul instruirii, în prezenţa instructorului)",
+        "value":"50-100 y.e. (2500-5000 lei)"
+    },
+    {
+        "article":"231.3",
+        "contravention":"Conducerea vehiculului de către o persoană privată de dreptul de a conduce vehicule",
+        "value":"100-150 y.e. (5000-7500 lei)"
+    },
+    {
+        "article":"231.4",
+        "contravention":"Predarea conducerii vehiculului către o persoană care nu are permis de conducere (cu excepţia instruirii, în prezenţa instructorului), care este privată de dreptul de a conduce vehicule sau care are permis de conducere de o categorie necorespunzătoare",
+        "value":"50-100 y.e. (2500-5000 lei)",
+        "penaltyPoint":3
+    },
+    {
+        "article":"232.1",
+        "contravention":"Conducerea vehiculului de către o persoană care nu are asupra sa permis de conducere sau actul de înmatriculare de stat a vehiculului, sau poliţa de asigurare obligatorie de răspundere civilă",
+        "value":"5 y.e. (250 lei)"
+    },
+    {
+        "article":"232.2",
+        "contravention":"Predarea conducerii vehiculului către o persoană care nu are asupra sa permis de conducere",
+        "value":"avertisment sau  5 y.e. (250 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"233.1",
+        "contravention":"Conducerea vehiculului de către o persoană care se află în stare de ebrietate produsă de alcool ce depăşeşte gradul maxim admisibil stabilit de lege, dacă fapta nu constituie infracţiune",
+        "value":"150 y.e. (7500 lei) cu privarea de dreptul de a conduce vehicule pe un termen de la 2 la 3 ani"
+    },
+    {
+        "article":"233.2",
+        "contravention":"Predarea cu bună ştiinţă a conducerii vehiculului către o persoană care se află în stare de ebrietate produsă de alcool ce depăşeşte gradul maxim admisibil stabilit de Guvern sau în stare de ebrietate produsă de substanţe narcotice, psihotrope şi/sau de alte substanţe cu efecte similare, dacă fapta nu constituie infracţiune",
+        "value":"150 y.e. (7500 lei) sau cu privarea de dreptul de a conduce vehicule pe un termen de la 1 la 3 ani"
+    },
+    {
+        "article":"233.2.1",
+        "contravention":"Consumul de alcool, de substanţe narcotice, psihotrope şi/sau de alte substanţe cu efecte similare de către conducătorul de vehicul implicat în accident rutier, pînă la testarea alcoolscopică sau pînă la recoltarea probelor biologice în cadrul examenului medical în vederea stabilirii stării de ebrietate şi a naturii ei, cu excepţia consumului de medicamente cu efecte similare substanţelor psihotrope, după producerea accidentului de circulaţie şi pînă la sosirea poliţiei la faţa locului, dacă acestea au fost administrate de personal medical autorizat şi au fost impuse de starea de sănătate",
+        "value":"150 y.e. (7500 lei) cu privarea de dreptul de a conduce vehicule pe un termen de la 2 la 3 ani"
+    },
+    {
+        "article":"233.3",
+        "contravention":"Acţiunile specificate la alineatele (1)–(2.1), în cazul în care admiterea la trafic a conducătorului de vehicul nu prevede obligaţia de a deţine permis de conducere",
+        "value":"100 y.e. (5000 lei) sau cu muncă neremunerată în folosul comunităţii pe o durată de la 20 la 40 de ore sau cu arest contravenţional pe un termen de 15 zile"
+    },
+    {
+        "article":"233.4",
+        "contravention":"Acţiunile prevăzute la alineatele (1)–(2.1), săvîrşite de către o persoană care nu deţine permis de conducere sau care este privată de dreptul de a conduce vehicule, dacă fapta nu constituie infracţiune",
+        "value":"150 y.e. (7500 lei) sau cu muncă neremunerată în folosul comunităţii pe o durată de la 40 la 60 de ore, sau cu arest contravenţional pe un termen de 15 zile"
+    },
+    {
+        "article":"234",
+        "contravention":"Necomunicarea de către proprietarul sau mandatarul (utilizatorul) vehiculului, la solicitarea poliţiei, a identităţii persoanei căreia i-a încredinţat conducerea sau comunicarea cu bună ştiinţă de date eronate privind identitatea acestei persoane",
+        "value":"persoanei fizice: 45-50 y.e. (2250-2500 lei), persoanei juridice: 75-100 y.e. (3750-5000 lei)"
+    },
+    {
+        "article":"235.1",
+        "contravention":"Încălcarea regulilor de folosire a centurii de siguranţă şi a căştii de protecţie a motociclistului",
+        "value":"15-20 y.e. (750-1000 lei)",
+        "penaltyPoint":3
+    },
+    {
+        "article":"235.2",
+        "contravention":"Purtarea convorbirilor radiotelefonice contrar Regulamentului circulaţiei rutiere",
+        "value":"15-20 y.e. (750-1000 lei)",
+        "penaltyPoint":3
+    },
+    {
+        "article":"236.1",
+        "contravention":"Depăşirea vitezei de circulaţie stabilită pe sectorul respectiv de drum de la 10 la 20 km/oră",
+        "value":"20 y.e. (1000 lei)",
+        "penaltyPoint":3
+    },
+    {
+        "article":"236.2",
+        "contravention":"Depăşirea vitezei de circulaţie stabilită pe sectorul respectiv de drum de la 20 la 40 km/oră",
+        "value":"30 y.e. (1500 lei)",
+        "penaltyPoint":4
+    },
+    {
+        "article":"236.3",
+        "contravention":"Depăşirea vitezei de circulaţie stabilită pe sectorul respectiv de drum mai mult de 40 km/oră",
+        "value":"50 y.e. (2500 lei)",
+        "penaltyPoint":5
+    },
+    {
+        "article":"237.1",
+        "contravention":"Traversarea de către conducătorul de vehicul a liniei de cale ferată în afara pasajului de nivel ",
+        "value":"100-125 y.e. (5000-6250 lei) sau cu muncă neremunerată în folosul comunităţii pe o durată de la 20 la 30 de ore, sau cu arest contravenţional pe un termen de 15 zile, în toate cazurile cu privarea de dreptul de a conduce vehicule pe un termen de 6 luni"
+    },
+    {
+        "article":"237.2",
+        "contravention":"Încălcarea de către conducătorul de vehicul a regulilor de traversare a liniei de cale ferată prin pasajul de nivel",
+        "value":"100-125 y.e. (5000-6250 lei) sau cu muncă neremunerată în folosul comunităţii pe o durată de la 30 la 40 de ore, sau cu arest contravenţional pe un termen de 15 zile, în toate cazurile cu privarea de dreptul de a conduce vehicule pe un termen de un an"
+    },
+    {
+        "article":"237.3",
+        "contravention":"Încălcarea de către conducătorul de vehicul a dispoziţiilor alin. (1) şi (2), care a generat riscul producerii unui accident de circulaţie",
+        "value":"125-150 y.e. (6250-7500 lei) sau cu muncă neremunerată în folosul comunităţii pe o durată de la 40 la 60 de ore, sau cu arest contravenţional pe un termen de 15 zile, în toate cazurile cu privarea de dreptul de a conduce vehicule pe un termen de la 2 la 3 ani"
+    },
+    {
+        "article":"238.1",
+        "contravention":"Oprirea în locuri interzise",
+        "value":"avertisment sau 5 y.e. (250 lei)"
+    },
+    {
+        "article":"238.2",
+        "contravention":"Staţionarea sau parcarea în locuri interzise",
+        "value":"pînă la 10 y.e. (500 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"238.3",
+        "contravention":"Neacordarea de prioritate legală pietonilor sau cicliştilor",
+        "value":"pînă la 10 y.e. (500 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"239",
+        "contravention":"Nerespectarea regulilor de circulaţie în zonele rezidenţiale",
+        "value":"5-10 y.e. (250-500 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"240.1",
+        "contravention":"Nerespectarea de către conducătorul de vehicul a indicatoarelor rutiere de prioritate, a indicatoarelor de interzicere şi de sens obligatoriu, a marcajului de pe partea carosabilă a drumului privind acordarea dreptului prioritar de circulaţie, dreptului de depăşire a vehiculelor, a exigenţelor de folosire a dispozitivelor de iluminat la căderea întunericului sau în condiţii de vizibilitate redusă",
+        "value":"5-10 y.e. (250-500 lei)"
+    },
+    {
+        "article":"240.2",
+        "contravention":"Neglijarea de către conducătorul de vehicul a semnalului de interzicere al semaforului sau a gestului de interzicere al agentului de circulaţie",
+        "value":"25-30 y.e. (1250-1500 lei)",
+        "penaltyPoint":2
+    },
+    {
+        "article":"241.1",
+        "contravention":"Neîndeplinirea de către conducătorul de vehicul a indicaţiei legale dată de agentul de circulaţie de a opri vehiculul",
+        "value":"45-50 y.e. (2250-2500 lei)",
+        "penaltyPoint":4
+    },
+    {
+        "article":"241.2",
+        "contravention":"Neacordarea priorităţii de trecere vehiculului cu farurile de semnalizare avînd lumina albastră sau roşie şi cu dispozitivele de semnalizare sonoră specială în funcţiune (vehicul cu regim prioritar de circulaţie)",
+        "value":"25-30 y.e. (1250-1500 lei)",
+        "penaltyPoint":4
+    },
+    {
+        "article":"242.1",
+        "contravention":"Încălcarea de către conducătorul de vehicul a regulilor de circulaţie rutieră soldată cu deteriorarea neînsemnată a vehiculelor, a încărcăturilor, a drumurilor, a instalaţiilor rutiere, a altor instalaţii sau a altor bunuri",
+        "value":"40 y.e. (2000 lei)",
+        "penaltyPoint":5
+    },
+    {
+        "article":"242.2",
+        "contravention":"Încălcarea de către conducătorul de vehicul a regulilor de circulaţie rutieră soldată cu cauzarea de leziuni corporale uşoare victimei sau cu deteriorarea considerabilă a vehiculelor, a încărcăturilor, a drumurilor, a instalaţiilor rutiere, a altor instalaţii sau a altor bunuri",
+        "value":"50 y.e. (2500 lei)",
+        "penaltyPoint":6
+    },
+    {
+        "article":"243",
+        "contravention":"Părăsirea de către vinovat a locului în care s-a produs accidentul rutier ",
+        "value":"privarea de dreptul de a conduce vehicule pe un termen de un an sau cu arest contravenţional pe un termen de 15 zile"
+    },
+    {
+        "article":"244",
+        "contravention":"Încălcarea de către conducătorul de vehicul a dispoziţiilor din Regulamentul circulaţiei rutiere, prevăzute la art.237–239 din prezentul cod, care a generat pericolul unui accident de circulaţie",
+        "value":"30-50 y.e. (1500-2500 lei)",
+        "penaltyPoint":4
+    },
+    {
+        "article":"245.1",
+        "contravention":"Ignorarea de către pietoni a semnalelor de dirijare a traficului rutier, traversarea părţii carosabile a drumului sau deplasarea pe ea în locuri neindicate, nerespectarea indicatoarelor rutiere de prioritate, a indicatoarelor de interdicţie şi de sens obligatoriu, a regulilor de deplasare pe drumuri a motocicliştilor, bicicliştilor, vizitiilor şi a altor persoane care se folosesc de drum",
+        "value":"avertisment sau 5-10 y.e. (250-500 lei)"
+    }
+]

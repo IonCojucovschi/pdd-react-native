@@ -1,0 +1,294 @@
+{
+    "chisinau":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.6",
+            "imageUrl":"R6_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.7",
+            "imageUrl":"R7_Chisinau.jpg"
+        },
+        {
+            "name":"Ruta nr.8",
+            "imageUrl":"R8_Chisinau.jpg"
+        }
+    ],
+    "balti":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.6",
+            "imageUrl":"R6_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.7",
+            "imageUrl":"R7_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.8",
+            "imageUrl":"R8_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.9",
+            "imageUrl":"R9_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.10",
+            "imageUrl":"R10_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.11",
+            "imageUrl":"R11_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.12",
+            "imageUrl":"R12_Balti.jpg"
+        },
+        {
+            "name":"Ruta nr.13",
+            "imageUrl":"R13_Balti_ro_web.jpg"
+        }
+    ],
+    "cahul":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_CAHUL.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_CAHUL.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_CAHUL.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_CAHUL.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_CAHUL.jpg"
+        }
+    ],
+    "causeni":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_CAUSENI.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_CAUSENI.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_CAUSENI.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_CAUSENI.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_CAUSENI.jpg"
+        }
+      ],
+      "comrat":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_COMRAT.jpg"
+        }, 
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_COMRAT.jpg"
+        }, 
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_COMRAT.jpg"
+        }, 
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_COMRAT.jpg"
+        }, 
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_COMRAT.jpg"
+        }
+    ],
+      "criuleni":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_CRIULENI.jpg"
+        }, 
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_CRIULENI.jpg"
+        }, 
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_CRIULENI.jpg"
+        }, 
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_CRIULENI.jpg"
+        }, 
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_CRIULENI.jpg"
+        }],
+      "edinet":[ 
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_EDINET.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_EDINET.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_EDINET.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_EDINET.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_EDINET.jpg"
+        }],
+      "hincesti":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_HINCESTI.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_HINCESTI.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_HINCESTI.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_HINCESTI.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_HINCESTI.jpg"
+        }],
+      "ocnita":[
+          
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_Ocnita.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_Ocnita.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_Ocnita.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_Ocnita.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_Ocnita.jpg"
+        }],
+      "orhei":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_ORHEI.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_ORHEI.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_ORHEI.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_ORHEI.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_ORHEI.jpg"
+        }],
+      "soroca":[
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_Soroca.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_Soroca.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_Soroca.jpg"
+        }],
+      "ungheni":[
+          
+        {
+            "name":"Ruta nr.1",
+            "imageUrl":"R1_UNG.jpg"
+        },
+        {
+            "name":"Ruta nr.2",
+            "imageUrl":"R2_UNG.jpg"
+        },
+        {
+            "name":"Ruta nr.3",
+            "imageUrl":"R3_UNG.jpg"
+        },
+        {
+            "name":"Ruta nr.4",
+            "imageUrl":"R4_UNG.jpg"
+        },
+        {
+            "name":"Ruta nr.5",
+            "imageUrl":"R5_UNG.jpg"
+        }
+      ]
+}

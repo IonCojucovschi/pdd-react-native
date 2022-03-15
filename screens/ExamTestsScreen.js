@@ -5,7 +5,8 @@ import allTest from "../AllTest.json";
 
 import HeaderComponent from "../components/HeaderComponent";
 import TestItem from "../components/TestComponent/TestItem";
-
+import {TestContainer} from "../services/repositoryService";
+import ChapterItemComponent from "../components/TestComponent/ChapterItem";
 
 const style = StyleSheet.create({
   examTests:{
@@ -24,13 +25,12 @@ const style = StyleSheet.create({
   }
 });
 
-const testMoq=[{Id:1, Tema:"[1.1] Dispoziții generale. Noțiuni şi termeni de bază"},
-{Id:2, Tema:"[1.2] Conducătorii de vehicule şi obligațiile acestora"},
-];
-
+const testContainer = new TestContainer();
 class ExamTestsScreen extends Component{
   constructor(props){
     super(props);
+
+    console.log("Chapter List :", testContainer.Chapters())
   }
 
   render(){
@@ -38,17 +38,22 @@ class ExamTestsScreen extends Component{
               <HeaderComponent/>
               <View style={{marginTop:20,width:"100%"}}/>
               <FlatList
-                  columnWrapperStyle={{ marginLeft:25, marginRight:25, justifyContent: 'space-between'}}
-                  data={testMoq}
-                  numColumns={4}
-                  renderItem={({ item, index }) => (<TestItem key={"testul"+index} navigation={this.props.navigation} item={item}/>)}
+                  data={testContainer.Chapters()}
+                  style={{ paddingLeft:25, paddingRight:25}}
+                  keyExtractor={(item, index) => "chapter"+index.toString()}
+                  numColumns={1}
+                  renderItem={({ item, index }) => (<ChapterItemComponent 
+                                                      key={"testul"+index}
+                                                      navigation={this.props.navigation} 
+                                                      pageLink={"Tests"} 
+                                                      chapter = {item.Chapter}
+                                                      name={item.Chapter.toUpperCase()}
+                                                      item={item}
+                                                      />)}
               />
-              
             </View>
   }
 
 }
 
 export default ExamTestsScreen
-
-

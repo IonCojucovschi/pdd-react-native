@@ -1,15 +1,20 @@
 {
-  "name": "My-first-react-native-app",
-  "displayName": "My-first-react-native-app",
+  "name": "PDD",
+  "displayName": "PDD",
   "expo": {
-    "name": "My-first-react-native-app",
-    "slug": "My-first-react-native-app",
+    "name": "PDD",
+    "slug": "PDD",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ],
+    "icon":"./img/icon.png",
     "android": {
       "package": "cojucovschi.PDD"
+    },
+    "splash": {
+      "image": "./img/icon.png",
+      "backgroundColor": "#68E350"
     }
   }
 }

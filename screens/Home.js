@@ -36,7 +36,7 @@ export default function HomeScreen({ navigation }) {
   
   return (
     <View style={style.containerHome}>
-        <StatusBar hidden />
+        <StatusBar hidden={true} />
         <HeaderComponent/>
         <View style={style.optionContainer}>
           <HomeItemComponent navigation={navigation} pageLink={"Tests"} count={20} name={"Categoria AB"}/> 

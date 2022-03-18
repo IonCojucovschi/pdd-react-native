@@ -14,7 +14,8 @@
     },
     "splash": {
       "image": "./img/icon.png",
-      "backgroundColor": "#68E350"
+      "backgroundColor": "#68E350",
+      "resizeMode": "contain"
     }
   }
 }

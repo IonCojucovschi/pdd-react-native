@@ -137,8 +137,8 @@ class SelectedTestScreen extends Component {
               </View>
               <View style={{ marginRight:23, marginLeft:23, marginTop:10}}>
                 {this.state.test.ImageUri ?
-                  <Image style={{height:200,width:"100%", backgroundColor:'#ccc', alignContent:"center", resizeMode:"cover"}}
-                  source={AllImages[this.state.test.ImageUri.replace(" ","")]}
+                  <Image style={{height:200,width:"100%", backgroundColor:'#eee', alignContent:"center", resizeMode:"contain"}}
+                  source={AllImages[this.state.test.ImageUri.replace(" ","").toLowerCase()]}
                   />:null
                 }
               </View>

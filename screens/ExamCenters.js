@@ -33,6 +33,7 @@ class ExamCenters extends Component{
 
        return(
         <ScrollView style={style.containerHome}>
+                <StatusBar hidden = {true}/>
                 <HeaderComponent/>
                 <View style={style.optionContainer}>
                     <HomeItemComponent count={8} navigation={this.props.navigation} pageLink={"ExamCentersRoutes"} name={"Chisinau"} params={{name:"chisinau"}}/> 

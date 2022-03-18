@@ -6,6 +6,7 @@ import allTest from "../AllTest.json";
 import HeaderComponent from "../components/HeaderComponent";
 import TestItem from "../components/TestComponent/TestItem";
 import {TestContainer} from "../services/repositoryService";
+import { StatusBar } from "expo-status-bar";
 
 const style = StyleSheet.create({
   examTests:{
@@ -38,6 +39,7 @@ class AllChaptersScreen extends Component{
 
   render(){
     return <View style={style.examTests}>
+              <StatusBar animated={true} showHideTransition={"none"} hidden = {true} backgroundColor="#fff"/>
               <HeaderComponent/>
               <View style={{marginTop:20,width:"100%"}}/>
               <FlatList

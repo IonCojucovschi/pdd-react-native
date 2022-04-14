@@ -123,6 +123,9 @@ class SelectedTestScreen extends Component {
 
 
    render(){
+      if(this.state.test.ImageUri)
+        console.log("Image PAth : ",this.state.test.ImageUri.replace(" ",""))
+      
       return (<View style={{position:"relative"}}>
             <ScrollView  style={style.testContainer}>
               <HeaderComponent/>

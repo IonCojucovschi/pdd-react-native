@@ -13,7 +13,7 @@
       "package": "cojucovschi.PDD"
     },
     "splash": {
-      "image": "./img/icon.png",
+      "image": "./img/splash.png",
       "backgroundColor": "#68E350",
       "resizeMode": "contain"
     }

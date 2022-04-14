@@ -1,12 +1,11 @@
 import React, { Component,useState,useEffect } from "react";
-import { View, Text, StyleSheet, Image, Button, FlatList, TouchableHighlight } from "react-native";
-import ImageModal from 'react-native-image-modal';
+import { View, Text, StyleSheet, Image, Button, Pressable, FlatList, TouchableHighlight } from "react-native";
 
 
 const style = StyleSheet.create({
    baseItem:{
-       height:160,
-       width:160,
+       height:170,
+       width:170,
        marginBottom:5,
        marginTop:5,
        borderRadius:20
@@ -17,17 +16,18 @@ const style = StyleSheet.create({
     borderRadius:20,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 0},
-    shadowRadius: 5,
+    //shadowRadius: 5,
     },
    imageStyle:{
     height:160,
     width:160,
+    left:1,
+    top:1,
     borderColor:"#cdcdcd",
     borderWidth:2,
-    backgroundColor:"#cdcdcd",
-    borderRadius:20,
+    backgroundColor:"#fff",
     position:"absolute",
-    opacity: .7,
+    borderRadius:20
     },
    textName:{
        fontSize:24,
@@ -36,9 +36,7 @@ const style = StyleSheet.create({
        zIndex:2,
        elevation:2,
        fontWeight:"bold",
-       marginTop:"80%",
-       color:"#000",
-       opacity:1
+       color:"#fff",
    }
     
 })
@@ -48,35 +46,39 @@ class  RouteItem extends Component  {
         super(props);
     }
 
-    goToPage=()=>{
-        //console.log("Image Is selected!!!! ",this.props);
-        ///this.props.navigation.navigate(this.props.pageLink, this.props.params);
+    itemIsCliked=()=>{
+        console.log("RouteItemClick: ",this.props)
+        if(this.props.imageUrl){
+            this.props.onItemClick(this.props.imageUrl);
+        }
     }
 
    render(){ 
-        return <TouchableHighlight activeOpacity={0.6}
-        underlayColor="#ffffff" style={style.baseItem} onPress={()=>this.goToPage()}>
-            <View style={style.containerItem}>
-                <ImageModal
-                    resizeMode="center"
-                    style={style.imageStyle}
-                    source={this.props.imageUrl}
-                    />
-                <Text style={style.textName}>{this.props.name}</Text>
-            </View>            
-        </TouchableHighlight> 
-
+        return <View activeOpacity={0.6}
+        style={style.baseItem}>
+            <Pressable onPress={()=>this.itemIsCliked()}>
+                <View style={style.containerItem}>
+                    <Image
+                            resizeMode="center"
+                            style={style.imageStyle}
+                            source={this.props.imageUrl}
+                            />
+                    <View style={{
+                        backgroundColor:"#5ead70",
+                        opacity:"0.6",
+                        width:"100%",
+                        height:"25%",
+                        marginTop:"75%",
+                        borderBottomLeftRadius:20,
+                        borderBottomRightRadius:20}}>
+                        <Text style={style.textName}>{this.props.name}</Text>
+                    </View>
+                </View>   
+            </Pressable>
+        </View> 
     }
 }
-
 export default RouteItem;
-
-
-
-// <Image
-//                     style={style.imageStyle}
-//                     source={this.props.imageUrl}
-//                 />
 
 
 

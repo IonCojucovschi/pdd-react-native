@@ -1,5 +1,5 @@
 import React, { Component,useState,useEffect } from "react";
-import { Text, StatusBar, Button, StyleSheet, View, FlatList } from 'react-native';
+import { Text, Modal, Image, StatusBar, Button, Pressable, StyleSheet, View, FlatList } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -115,18 +115,55 @@ class ExamCentersRoutes extends Component{
     constructor(props)
     {
         super(props);
+        this.state={
+            visible:false,
+        }
     }
     _keyExtractor = (item, index) => "routeItem_" + index.toString();
     
     selectedCity = this.props.navigation.state.params.name;
+
+
+    selectedRoute=(routeImg)=>{
+        this.setState({visible:true,imageUrl:routeImg})
+    }
+
+    closeModal=()=>{
+        this.setState({visible:false})
+    }
+
    render(){
        console.log("Orasul selectat este :",this.selectedCity);
        return(
         <View style={style.containerHome}>
                 <HeaderComponent/>
+                <Modal
+                    animationType="slide"
+                    transparent={true}
+                    visible={this.state.visible}
+                    onRequestClose={() => { 
+                        this.closeModal()
+                    }}>
+                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                        <View style={{margin: 20, backgroundColor: 'white', height:"100%",width:"100%", padding: 10, alignItems: 'center', shadowColor: '#000', shadowOffset: { width: 0, height: 2, }, shadowOpacity: 0.25, shadowRadius: 4, elevation: 5}}>
+                            <View style={{height:"8%", width:"100%", alignContent:"flex-end"}}>
+                                <Pressable onPress={ () => this.closeModal() } style={{height:30, width:30}}>
+                                    <Text style={{fontSize:30,height:30, width:30, color:"#000"}}>X</Text>
+                                </Pressable>
+                            </View>
+
+                            { this.state.imageUrl ? <Image 
+                                source={this.state.imageUrl}
+                                style={{height:"100%",width:"100%", position:"absolute", zIndex:-1, resizeMode:"contain"}}
+                            /> : null }
+                        </View>
+                    </View>
+                </Modal>
+            
+
                 <View style={style.optionContainer}>
                     <FlatList
-                    columnWrapperStyle={{paddingLeft:25, paddingRight:25,width:"100%", paddingBottom:50, justifyContent: 'space-between'}}
+                    columnWrapperStyle={{paddingLeft:25, paddingRight:25,width:"100%", paddingBottom:10, justifyContent: 'space-between'}}
                     data={routesResource[this.selectedCity]}
                     numColumns={2}
                     keyExtractor = {this._keyExtractor}
@@ -136,6 +173,7 @@ class ExamCentersRoutes extends Component{
                         imageUrl={RoutesImage[item.imageUrl]} 
                         navigation={this.props.navigation} 
                         name={item.name} 
+                        onItemClick = {this.selectedRoute}
                         item={item}/>)}
                 />
                 </View>

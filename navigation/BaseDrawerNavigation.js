@@ -17,9 +17,6 @@ import PenaltyDetails from "../screens/PenaltyDetails";
 import InfoScreen from "../screens/InfoScreen";
 
 /// import navigators
-import NotificationNavigator from './NotificationNavigator';
-import AnotherNavigation from "./AnotherNavigation";
-import { floor } from "react-native-reanimated";
 
 // const _FeedNaviator = createStackNavigator({
 //   Feed:{

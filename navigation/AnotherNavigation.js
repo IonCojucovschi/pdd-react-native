@@ -34,31 +34,5 @@ const _ComunityNavigator=createStackNavigator({
     }
 })
 
-
-const AnotherNavigator=createDrawerNavigator({
-    Another:{
-        screen:_AnotherNavigator,
-        navigationOptions:{
-            title:"Mai mult"
-        }
-    },
-
-    Comunity:{
-        screen:_ComunityNavigator,
-        navigationOptions:{
-            title:"Comunitate" 
-        }
-    },
-    Music:{
-        screen:_MusicNavigator,
-        navigationOptions:{
-            title:"Muzica"
-        }
-    }
-
-
-
-})
-
 export default AnotherNavigator;
 

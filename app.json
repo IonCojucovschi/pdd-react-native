@@ -8,7 +8,7 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "icon":"./img/icon.png",
+    "icon": "./img/icon.png",
     "android": {
       "package": "cojucovschi.PDD"
     },
@@ -16,6 +16,11 @@
       "image": "./img/splash.png",
       "backgroundColor": "#68E350",
       "resizeMode": "contain"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eeee1ffb-7122-4498-9ff4-03fad49336c8"
+      }
     }
   }
 }

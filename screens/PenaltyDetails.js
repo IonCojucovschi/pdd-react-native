@@ -13,7 +13,6 @@ import PenaltyRow from '../components/Penalty/PenaltyRow';
 import PenaltyRowWithPoints from '../components/Penalty/PenaltyRowWithPoints';
 import PenaltyWthoutPoints from "../PenaltiesCART.json";
 import PenaltyWithPoints from "../PenaltiesCDCR.json";
-import { set } from "react-native-reanimated";
 
 const style = StyleSheet.create({
   containerHome:{

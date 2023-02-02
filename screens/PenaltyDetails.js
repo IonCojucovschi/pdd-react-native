@@ -1,9 +1,5 @@
 import React, { Component,useState,useEffect } from "react";
 import {ScrollView, Text, StatusBar, Button, StyleSheet, View, TouchableHighlight } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { createBottomTabNavigator } from "react-navigation-tabs";
 
 
 import HeaderComponent from '../components/HeaderComponent';

@@ -1,8 +1,5 @@
 import * as React from 'react';
 import { Text, StatusBar, Button, StyleSheet, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 
 
 
